@@ -13,6 +13,7 @@ Using the Stacks endpoint, you can submit requests using the following methods.
 * List all stack actions
 * View a stack action
 * Perform a stack action
+* Add an SSL certificate to a stack
 
 
 ## Stack List
@@ -503,6 +504,62 @@ You can use this method to reboot the stack or speific server group of a stack.
 ### HTTP Request
 
 `POST /stacks/{stack_id}/reboot_servers`
+
+### Query parameters
+
+Parameter | Presence | Data type | Description |  Sample value
+--------- | ------- | ------- |----------- |  -------
+stack_id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa5fafb64bff0ba80`
+strategy | **required** | string | parallel or serial | `parallel`
+group | **optional** | string | all or web/db/redis etc (default is web) | `mysql`
+
+
+
+## SSL certificate
+
+```ruby
+stack_id = 'a6b583684833a2cf4845079c9d9350a8'
+response = token.post("#{api_url}/stacks/#{stack_id}/reboot_servers.json")
+
+puts JSON.parse(response.body)['response']
+```
+
+```http
+POST /stacks/{stack_id}/reboot_servers HTTP/1.1
+X-RateLimit-Limit: 3600
+X-RateLimit-Remaining: 3597
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "response":
+    {
+      "id":10,
+      "user":"test@cloud66.com",
+      "resource_type":"stack",
+      "action":"stack_reboot",
+      "resource_id":"283",
+      "started_via":"api",
+      "started_at":"2016-01-01T19:08:05Z",
+      "finished_at":null,
+      "finished_success":null,
+      "finished_message":null
+    }
+}
+```
+
+You can use this method to reboot the stack or speific server group of a stack.
+
+<aside class="notice">
+<b>Scope:</b> <i>public</i>
+</aside>
+
+### HTTP Request
+
+`POST /stacks/{id}/ssl_certificates`
 
 ### Query parameters
 
