@@ -525,7 +525,7 @@ puts JSON.parse(response.body)['response']
 ```
 
 ```http
-POST /stacks/{stack_id}/reboot_servers HTTP/1.1
+POST /stacks/{stack_id}/ssl_certificates HTTP/1.1
 X-RateLimit-Limit: 3600
 X-RateLimit-Remaining: 3597
 ```
@@ -540,31 +540,31 @@ Content-Type: application/json
       "id":10,
       "user":"test@cloud66.com",
       "resource_type":"stack",
-      "action":"stack_reboot",
+      "action":"ssl_certificate",
       "resource_id":"283",
       "started_via":"api",
-      "started_at":"2016-01-01T19:08:05Z",
-      "finished_at":null,
-      "finished_success":null,
-      "finished_message":null
+
     }
 }
 ```
 
-You can use this method to reboot the stack or speific server group of a stack.
+You can use this method to add or update SSL certificates on a stack.
 
 <aside class="notice">
-<b>Scope:</b> <i>public</i>
+<b>Scope:</b> <i>admin</i>
 </aside>
 
 ### HTTP Request
 
-`POST /stacks/{id}/ssl_certificates`
+`POST /stacks/{stack_id}/ssl_certificates`
 
 ### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-stack_id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa5fafb64bff0ba80`
-strategy | **required** | string | parallel or serial | `parallel`
-group | **optional** | string | all or web/db/redis etc (default is web) | `mysql`
+type | **required** | string | Type of certificate (manual or Let's Encrypt) | `lets_encrypt`
+ssl_termination | **required** | bool | Whether SSL certificate is terminated on the load balancer or not | `true`
+server_names | **required** | string | comma separated list of domains | `hello.com,world.co.uk`
+certificate | **required for manual certs** | string | The certificate address | `xxx`
+key | **required for manual certs** | string | The certificate key | `xxx`
+intermediate_certificate | **optional** | string | The intermediate certificate chain | `xxx`
