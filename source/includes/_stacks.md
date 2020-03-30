@@ -518,14 +518,14 @@ group | **optional** | string | all or web/db/redis etc (default is web) | `mysq
 ## SSL certificate
 
 ```ruby
-stack_id = 'a6b583684833a2cf4845079c9d9350a8'
-response = token.post("#{api_url}/stacks/#{stack_id}/reboot_servers.json")
+stack_id = 'JReEhI8LboQjFcI4hMmbgLqvPbMkgT7T'
+response = token.post("#{api_url}/stacks/#{stack_id}/ssl_certificates.json")
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-POST /stacks/{stack_id}/ssl_certificates HTTP/1.1
+GET /stacks/{stack_id}/ssl_certificates HTTP/1.1
 X-RateLimit-Limit: 3600
 X-RateLimit-Remaining: 3597
 ```
@@ -535,20 +535,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "response":
+  "response": [
     {
-      "id":10,
-      "user":"test@cloud66.com",
-      "resource_type":"stack",
-      "action":"ssl_certificate",
-      "resource_id":"283",
-      "started_via":"api",
-
+      "uuid": "ssl-5NW0p4CvaYMIjmySGPsCBWLlXIkiIgxw",
+      "name": "my-serv-new",
+      "server_group_id": null,
+      "server_names": "master.my-serv-new.c66.me",
+      "sha256_fingerprint": "UXXsUuBNZQhNBBsPjaEATCA8t06O2RvgxuMC16q1XLCCHkIitBvMcDqoUpNO16oK",
+      "ca_name": "Let's Encrypt",
+      "type": "lets_encrypt",
+      "ssl_termination": true,
+      "has_intermediate_cert": true,
+      "status": 3,
+      "created_at": "2019-10-23T14:15:53Z",
+      "updated_at": "2020-03-04T12:48:25Z",
+      "expires_at": "2020-06-02T11:48:04Z",
+      "certificate": null,
+      "key": null,
+      "intermediate_certificate": null
     }
+  ],
+  "count": 1,
+  "pagination": {
+    "previous": null,
+    "next": null,
+    "current": 1,
+    "per_page": 30,
+    "count": 1,
+    "pages": 1
+  }
 }
 ```
 
-You can use this method to add or update SSL certificates on a stack.
+You can use this method to query, add, delete or update SSL certificates on a stack.
 
 <aside class="notice">
 <b>Scope:</b> <i>admin</i>
@@ -556,7 +575,17 @@ You can use this method to add or update SSL certificates on a stack.
 
 ### HTTP Request
 
-`POST /stacks/{stack_id}/ssl_certificates`
+`GET /stacks/:stack_id/ssl_certificates`
+
+`POST /stacks/:stack_id/ssl_certificates`
+
+`GET /stacks/:stack_id/ssl_certificates/:id`
+
+`PATCH /stacks/:stack_id/ssl_certificates/:id` 
+
+`PUT /stacks/:stack_id/ssl_certificates/:id` 
+
+`DELETE /stacks/:stack_id/ssl_certificates/:id`
 
 ### Query parameters
 
