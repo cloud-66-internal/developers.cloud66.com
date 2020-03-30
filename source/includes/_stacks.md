@@ -594,6 +594,6 @@ Parameter | Presence | Data type | Description |  Sample value
 type | **required** | string | Type of certificate (manual or Let's Encrypt) | `lets_encrypt`
 ssl_termination | **required** | bool | Whether SSL certificate is terminated on the load balancer or not | `true`
 server_names | **required** | string | comma separated list of domains | `hello.com,world.co.uk`
-certificate | **required for manual certs** | string | The certificate address | `xxx`
-key | **required for manual certs** | string | The certificate key | `xxx`
-intermediate_certificate | **optional** | string | The intermediate certificate chain | `xxx`
+certificate | **required for manual certs** | string | The certificate address | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE----- |
+key | **required for manual certs** | string | The certificate key | -----BEGIN RSA PRIVATE KEY----- <br /> `entire key hash` <br /> -----END RSA PRIVATE KEY-----
+intermediate_certificate | **optional** | string | The intermediate certificate chain | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE-----
