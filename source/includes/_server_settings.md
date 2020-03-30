@@ -1,4 +1,4 @@
-# Server Settings settings
+# Server Settings
 
 ## Server Settings list
 
