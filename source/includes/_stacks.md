@@ -13,6 +13,7 @@ Using the Stacks endpoint, you can submit requests using the following methods.
 * List all stack actions
 * View a stack action
 * Perform a stack action
+* Add an SSL certificate to a stack
 
 
 ## Stack List
@@ -511,3 +512,88 @@ Parameter | Presence | Data type | Description |  Sample value
 stack_id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa5fafb64bff0ba80`
 strategy | **required** | string | parallel or serial | `parallel`
 group | **optional** | string | all or web/db/redis etc (default is web) | `mysql`
+
+
+
+## SSL certificate
+
+```ruby
+stack_id = 'JReEhI8LboQjFcI4hMmbgLqvPbMkgT7T'
+response = token.post("#{api_url}/stacks/#{stack_id}/ssl_certificates.json")
+
+puts JSON.parse(response.body)['response']
+```
+
+```http
+GET /stacks/{stack_id}/ssl_certificates HTTP/1.1
+X-RateLimit-Limit: 3600
+X-RateLimit-Remaining: 3597
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "response": [
+    {
+      "uuid": "ssl-5NW0p4CvaYMIjmySGPsCBWLlXIkiIgxw",
+      "name": "my-serv-new",
+      "server_group_id": null,
+      "server_names": "master.my-serv-new.c66.me",
+      "sha256_fingerprint": "UXXsUuBNZQhNBBsPjaEATCA8t06O2RvgxuMC16q1XLCCHkIitBvMcDqoUpNO16oK",
+      "ca_name": "Let's Encrypt",
+      "type": "lets_encrypt",
+      "ssl_termination": true,
+      "has_intermediate_cert": true,
+      "status": 3,
+      "created_at": "2019-10-23T14:15:53Z",
+      "updated_at": "2020-03-04T12:48:25Z",
+      "expires_at": "2020-06-02T11:48:04Z",
+      "certificate": null,
+      "key": null,
+      "intermediate_certificate": null
+    }
+  ],
+  "count": 1,
+  "pagination": {
+    "previous": null,
+    "next": null,
+    "current": 1,
+    "per_page": 30,
+    "count": 1,
+    "pages": 1
+  }
+}
+```
+
+You can use this method to query, add, delete or update SSL certificates on a stack.
+
+<aside class="notice">
+<b>Scope:</b> <i>admin</i>
+</aside>
+
+### HTTP Request
+
+`GET /stacks/:stack_id/ssl_certificates`
+
+`POST /stacks/:stack_id/ssl_certificates`
+
+`GET /stacks/:stack_id/ssl_certificates/:id`
+
+`PATCH /stacks/:stack_id/ssl_certificates/:id` 
+
+`PUT /stacks/:stack_id/ssl_certificates/:id` 
+
+`DELETE /stacks/:stack_id/ssl_certificates/:id`
+
+### Query parameters
+
+Parameter | Presence | Data type | Description |  Sample value
+--------- | ------- | ------- |----------- |  -------
+type | **required** | string | Type of certificate (manual or Let's Encrypt) | `lets_encrypt`
+ssl_termination | **required** | bool | Whether SSL certificate is terminated on the load balancer or not | `true`
+server_names | **required** | string | comma separated list of domains | `hello.com,world.co.uk`
+certificate | **required for manual certs** | string | The certificate address | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE----- |
+key | **required for manual certs** | string | The certificate key | -----BEGIN RSA PRIVATE KEY----- <br /> `entire key hash` <br /> -----END RSA PRIVATE KEY-----
+intermediate_certificate | **optional** | string | The intermediate certificate chain | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE-----

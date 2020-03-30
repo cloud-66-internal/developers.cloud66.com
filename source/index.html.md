@@ -92,7 +92,7 @@ By default, the response will take the following form:
 
 The access token allows you to make requests to the API on behalf of a user.
 
-`GET "https://app.cloud66.com/api/3/stack.json" -H "Authorization: Bearer e72e...b4a"`
+`GET "https://app.cloud66.com/api/3/stacks.json" -H "Authorization: Bearer e72e...b4a"`
 
 ## Scoped access
 A user’s scope defines the limits of the actions the user can perform with the Cloud 66 API. The user’s scope is encrypted as part of the OAuth access token. Users cannot submit requests not allowed by their defined scopes.
