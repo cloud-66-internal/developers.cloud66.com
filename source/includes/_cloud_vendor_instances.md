@@ -423,19 +423,24 @@ n2-standard-80 | n2-standard-80 - 80 vCPUs - 327,680MB RAM
 ## Hetzner
 **Key**|**Description**
 -----|-----
-11| Dedicated - 2 vCPUs - 8.0 GB RAM - 80 GB disk
-12| Dedicated - 4 vCPUs - 16.0 GB RAM - 160 GB disk
-13| Dedicated - 8 vCPUs - 32.0 GB RAM - 240 GB disk
-14| Dedicated - 16 vCPUs - 64.0 GB RAM - 360 GB disk
-15| Dedicated - 32 vCPUs - 128.0 GB RAM - 600 GB disk
-3| Local storage - 2 vCPUs - 4.0 GB RAM - 40 GB disk
-5| Local storage - 2 vCPUs - 8.0 GB RAM - 80 GB disk
-7| Local storage - 4 vCPUs - 16.0 GB RAM - 160 GB disk
-9| Local storage - 8 vCPUs - 32.0 GB RAM - 240 GB disk
-6| Network storage - 2 vCPUs - 8.0 GB RAM - 80 GB disk
-4| Network storage - 2 vCPUs - 4.0 GB RAM - 40 GB disk
-8| Network storage - 4 vCPUs - 16.0 GB RAM - 160 GB disk
-10| Network storage - 8 vCPUs - 32.0 GB RAM - 240 GB disk
+11| Dedicated - CCX11 - 2 vCPUs - 8.0 GB RAM - 80 GB disk
+12| Dedicated - CCX21 - 4 vCPUs - 16.0 GB RAM - 160 GB disk
+13| Dedicated - CCX31 - 8 vCPUs - 32.0 GB RAM - 240 GB disk
+14| Dedicated - CCX41 - 16 vCPUs - 64.0 GB RAM - 360 GB disk
+15| Dedicated - CCX51 - 32 vCPUs - 128.0 GB RAM - 600 GB disk
+3| Local storage - CX21 - 2 vCPUs - 4.0 GB RAM - 40 GB disk
+5| Local storage - CX31 - 2 vCPUs - 8.0 GB RAM - 80 GB disk
+22| Local storage - CPX11 - 2 vCPUs - 2.0 GB RAM - 40 GB disk
+23| Local storage - CPX21 - 3 vCPUs - 4.0 GB RAM - 80 GB disk
+7| Local storage - CX41 - 4 vCPUs - 16.0 GB RAM - 160 GB disk
+24| Local storage - CPX31 - 4 vCPUs - 8.0 GB RAM - 160 GB disk
+9| Local storage - CX51 - 8 vCPUs - 32.0 GB RAM - 240 GB disk
+25| Local storage - CPX41 - 8 vCPUs - 16.0 GB RAM - 240 GB disk
+26| Local storage - CPX51 - 16 vCPUs - 32.0 GB RAM - 360 GB disk
+4| Network storage - CX21-CEPH - 2 vCPUs - 4.0 GB RAM - 40 GB disk
+6| Network storage - CX31-CEPH - 2 vCPUs - 8.0 GB RAM - 80 GB disk
+8| Network storage - CX41-CEPH - 4 vCPUs - 16.0 GB RAM - 160 GB disk
+10| Network storage - CX51-CEPH - 8 vCPUs - 32.0 GB RAM - 240 GB disk
 
 ## Linode
 **Key**|**Description**
@@ -542,6 +547,7 @@ x2.xlarge.x86 | x2.xlarge.x86
 
 **Key**|**Description**
 -----|-----
+201| Cloud Compute - 1 vCPUs - 1GB RAM - 25 GB SSD - 1GB TB BW
 202| Cloud Compute - 1 vCPUs - 2GB RAM - 55 GB SSD - 22GB TB BW
 203| Cloud Compute - 2 vCPUs - 4GB RAM - 80 GB SSD - 32GB TB BW
 204| Cloud Compute - 4 vCPUs - 8GB RAM - 160 GB SSD - 42GB TB BW
