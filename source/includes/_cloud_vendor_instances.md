@@ -185,79 +185,315 @@ z1d.xlarge | Memory optimized (z1d.xlarge)
 ## Azure
 **Key**|**Description**
 -----|-----
-ExtraSmall|A0
-Small|A1
-Medium|A2
-Large|A3
-ExtraLarge|A4
-A5|A5
-A6|A6
-A7|A7
-A8|A8
-A9|A9
-A10|A10
-A11|A11
-Standard\_D1|D1
-Standard\_D2|D2
-Standard\_D3|D3
-Standard\_D4|D4
-Standard\_D11|D11
-Standard\_D12|D12
-Standard\_D13|D13
-Standard\_D14|D14
-Standard\_D1\_v2|D1\_v2
-Standard\_D2\_v2|D2\_v2
-Standard\_D3\_v2|D3\_v2
-Standard\_D4\_v2|D4\_v2
-Standard\_D5\_v2|D5\_v2
-Standard\_D11\_v2|D11\_v2
-Standard\_D12\_v2|D12\_v2
-Standard\_D13\_v2|D13\_v2
-Standard\_D14\_v2|D14\_v2
-Standard\_D15\_v2|D15\_v2
-Standard\_DS1|DS1
-Standard\_DS2|DS2
-Standard\_DS3|DS3
-Standard\_DS4|DS4
-Standard\_DS11|DS11
-Standard\_DS12|DS12
-Standard\_DS13|DS13
-Standard\_DS14|DS14
-Standard\_DS1\_v2|DS1\_v2
-Standard\_DS2\_v2|DS2\_v2
-Standard\_DS3\_v2|DS3\_v2
-Standard\_DS4\_v2|DS4\_v2
-Standard\_DS11\_v2|DS11\_v2
-Standard\_DS12\_v2|DS12\_v2
-Standard\_DS13\_v2|DS13\_v2
-Standard\_DS14\_v2|DS14\_v2
-Standard\_DS15\_v2|DS15\_v2
-Standard\_F1|F1
-Standard\_F2|F2
-Standard\_F4|F4
-Standard\_F8|F8
-Standard\_F16|F16
-Standard\_F1s|F1s
-Standard\_F2s|F2s
-Standard\_F4s|F4s
-Standard\_F8s|F8s
-Standard\_F16s|F16s
-Standard\_G1|G1
-Standard\_G2|G2
-Standard\_G3|G3
-Standard\_G4|G4
-Standard\_G5|G5
-Standard\_GS1|GS1
-Standard\_GS2|GS2
-Standard\_GS3|GS3
-Standard\_GS4|GS4
-Standard\_GS5|GS5
-Standard\_NV6|NV6
-Standard\_NV12|NV12
-Standard\_NV24|NV24
-Standard\_NC6|NC6
-Standard\_NC12|NC12
-Standard\_NC24|NC24
+Basic_A0|Basic - A0 - 1 vCPUs - 0.75GB RAM
+Basic_A1|Basic - A1 - 1 vCPUs - 1.75GB RAM
+Basic_A2|Basic - A2 - 2 vCPUs - 3.5GB RAM
+Basic_A3|Basic - A3 - 4 vCPUs - 7GB RAM
+Basic_A4|Basic - A4 - 8 vCPUs - 14GB RAM
+Standard_A0|A0 - 1 vCPUs - 0.75GB RAM
+Standard_A1|A1 - 1 vCPUs - 1.75GB RAM
+Standard_A1_v2|A1 (v2) - 1 vCPUs - 2GB RAM
+Standard_A2|A2 - 2 vCPUs - 3.5GB RAM
+Standard_A2_v2|A2 (v2) - 2 vCPUs - 4GB RAM
+Standard_A2m_v2|A2m (v2) - 2 vCPUs - 16GB RAM
+Standard_A3|A3 - 4 vCPUs - 7GB RAM
+Standard_A4|A4 - 8 vCPUs - 14GB RAM
+Standard_A4_v2|A4 (v2) - 4 vCPUs - 8GB RAM
+Standard_A4m_v2|A4m (v2) - 4 vCPUs - 32GB RAM
+Standard_A5|A5 - 2 vCPUs - 14GB RAM
+Standard_A6|A6 - 4 vCPUs - 28GB RAM
+Standard_A7|A7 - 8 vCPUs - 56GB RAM
+Standard_A8|A8 - 8 vCPUs - 56GB RAM
+Standard_A8_v2|A8 (v2) - 8 vCPUs - 16GB RAM
+Standard_A8m_v2|A8m (v2) - 8 vCPUs - 64GB RAM
+Standard_A9|A9 - 16 vCPUs - 112GB RAM
+Standard_A10|A10 - 8 vCPUs - 56GB RAM
+Standard_A11|A11 - 16 vCPUs - 112GB RAM
+Standard_B1ls|B1ls - 1 vCPUs - 0.5GB RAM
+Standard_B1ms|B1ms - 1 vCPUs - 2GB RAM
+Standard_B1s|B1s - 1 vCPUs - 1GB RAM
+Standard_B2ms|B2ms - 2 vCPUs - 8GB RAM
+Standard_B2s|B2s - 2 vCPUs - 4GB RAM
+Standard_B4ms|B4ms - 4 vCPUs - 16GB RAM
+Standard_B8ms|B8ms - 8 vCPUs - 32GB RAM
+Standard_B12ms|B12ms - 12 vCPUs - 48GB RAM
+Standard_B16ms|B16ms - 16 vCPUs - 64GB RAM
+Standard_B20ms|B20ms - 20 vCPUs - 80GB RAM
+Standard_D1|D1 - 1 vCPUs - 3.5GB RAM
+Standard_D1_v2|D1 (v2) - 1 vCPUs - 3.5GB RAM
+Standard_D2|D2 - 2 vCPUs - 7GB RAM
+Standard_D2_v2|D2 (v2) - 2 vCPUs - 7GB RAM
+Standard_D2_v2_Promo|D2 (v2) Promo - 2 vCPUs - 7GB RAM
+Standard_D2_v3|D2 (v3) - 2 vCPUs - 8GB RAM
+Standard_D2a_v4|D2a (v4) - 2 vCPUs - 8GB RAM
+Standard_D2as_v4|D2as (v4) - 2 vCPUs - 8GB RAM
+Standard_D2s_v3|D2s (v3) - 2 vCPUs - 8GB RAM
+Standard_D3|D3 - 4 vCPUs - 14GB RAM
+Standard_D3_v2|D3 (v2) - 4 vCPUs - 14GB RAM
+Standard_D3_v2_Promo|D3 (v2) Promo - 4 vCPUs - 14GB RAM
+Standard_D4|D4 - 8 vCPUs - 28GB RAM
+Standard_D4_v2|D4 (v2) - 8 vCPUs - 28GB RAM
+Standard_D4_v2_Promo|D4 (v2) Promo - 8 vCPUs - 28GB RAM
+Standard_D4_v3|D4 (v3) - 4 vCPUs - 16GB RAM
+Standard_D4a_v4|D4a (v4) - 4 vCPUs - 16GB RAM
+Standard_D4as_v4|D4as (v4) - 4 vCPUs - 16GB RAM
+Standard_D4s_v3|D4s (v3) - 4 vCPUs - 16GB RAM
+Standard_D5_v2|D5 (v2) - 16 vCPUs - 56GB RAM
+Standard_D5_v2_Promo|D5 (v2) Promo - 16 vCPUs - 56GB RAM
+Standard_D8_v3|D8 (v3) - 8 vCPUs - 32GB RAM
+Standard_D8a_v4|D8a (v4) - 8 vCPUs - 32GB RAM
+Standard_D8as_v4|D8as (v4) - 8 vCPUs - 32GB RAM
+Standard_D8s_v3|D8s (v3) - 8 vCPUs - 32GB RAM
+Standard_D11|D11 - 2 vCPUs - 14GB RAM
+Standard_D11_v2|D11 (v2) - 2 vCPUs - 14GB RAM
+Standard_D11_v2_Promo|D11 (v2) Promo - 2 vCPUs - 14GB RAM
+Standard_D12|D12 - 4 vCPUs - 28GB RAM
+Standard_D12_v2|D12 (v2) - 4 vCPUs - 28GB RAM
+Standard_D12_v2_Promo|D12 (v2) Promo - 4 vCPUs - 28GB RAM
+Standard_D13|D13 - 8 vCPUs - 56GB RAM
+Standard_D13_v2|D13 (v2) - 8 vCPUs - 56GB RAM
+Standard_D13_v2_Promo|D13 (v2) Promo - 8 vCPUs - 56GB RAM
+Standard_D14|D14 - 16 vCPUs - 112GB RAM
+Standard_D14_v2|D14 (v2) - 16 vCPUs - 112GB RAM
+Standard_D14_v2_Promo|D14 (v2) Promo - 16 vCPUs - 112GB RAM
+Standard_D15_v2|D15 (v2) - 20 vCPUs - 140GB RAM
+Standard_D16_v3|D16 (v3) - 16 vCPUs - 64GB RAM
+Standard_D16a_v4|D16a (v4) - 16 vCPUs - 64GB RAM
+Standard_D16as_v4|D16as (v4) - 16 vCPUs - 64GB RAM
+Standard_D16s_v3|D16s (v3) - 16 vCPUs - 64GB RAM
+Standard_D32_v3|D32 (v3) - 32 vCPUs - 128GB RAM
+Standard_D32a_v4|D32a (v4) - 32 vCPUs - 128GB RAM
+Standard_D32as_v4|D32as (v4) - 32 vCPUs - 128GB RAM
+Standard_D32s_v3|D32s (v3) - 32 vCPUs - 128GB RAM
+Standard_D48_v3|D48 (v3) - 48 vCPUs - 192GB RAM
+Standard_D48a_v4|D48a (v4) - 48 vCPUs - 192GB RAM
+Standard_D48as_v4|D48as (v4) - 48 vCPUs - 192GB RAM
+Standard_D48s_v3|D48s (v3) - 48 vCPUs - 192GB RAM
+Standard_D64_v3|D64 (v3) - 64 vCPUs - 256GB RAM
+Standard_D64a_v4|D64a (v4) - 64 vCPUs - 256GB RAM
+Standard_D64as_v4|D64as (v4) - 64 vCPUs - 256GB RAM
+Standard_D64s_v3|D64s (v3) - 64 vCPUs - 256GB RAM
+Standard_D96a_v4|D96a (v4) - 96 vCPUs - 384GB RAM
+Standard_D96as_v4|D96as (v4) - 96 vCPUs - 384GB RAM
+Standard_DC1s_v2|DC1s (v2) - 1 vCPUs - 4GB RAM
+Standard_DC2s|DC2s - 2 vCPUs - 8GB RAM
+Standard_DC2s_v2|DC2s (v2) - 2 vCPUs - 8GB RAM
+Standard_DC4s|DC4s - 4 vCPUs - 16GB RAM
+Standard_DC4s_v2|DC4s (v2) - 4 vCPUs - 16GB RAM
+Standard_DC8_v2|DC8 (v2) - 8 vCPUs - 32GB RAM
+Standard_DS1|DS1 - 1 vCPUs - 3.5GB RAM
+Standard_DS1_v2|DS1 (v2) - 1 vCPUs - 3.5GB RAM
+Standard_DS2|DS2 - 2 vCPUs - 7GB RAM
+Standard_DS2_v2|DS2 (v2) - 2 vCPUs - 7GB RAM
+Standard_DS2_v2_Promo|DS2 (v2) Promo - 2 vCPUs - 7GB RAM
+Standard_DS3|DS3 - 4 vCPUs - 14GB RAM
+Standard_DS3_v2|DS3 (v2) - 4 vCPUs - 14GB RAM
+Standard_DS3_v2_Promo|DS3 (v2) Promo - 4 vCPUs - 14GB RAM
+Standard_DS4|DS4 - 8 vCPUs - 28GB RAM
+Standard_DS4_v2|DS4 (v2) - 8 vCPUs - 28GB RAM
+Standard_DS4_v2_Promo|DS4 (v2) Promo - 8 vCPUs - 28GB RAM
+Standard_DS5_v2|DS5 (v2) - 16 vCPUs - 56GB RAM
+Standard_DS5_v2_Promo|DS5 (v2) Promo - 16 vCPUs - 56GB RAM
+Standard_DS11|DS11 - 2 vCPUs - 14GB RAM
+Standard_DS11-1_v2|DS11-1 (v2) - 2 vCPUs - 14GB RAM
+Standard_DS11_v2|DS11 (v2) - 2 vCPUs - 14GB RAM
+Standard_DS11_v2_Promo|DS11 (v2) Promo - 2 vCPUs - 14GB RAM
+Standard_DS12|DS12 - 4 vCPUs - 28GB RAM
+Standard_DS12-1_v2|DS12-1 (v2) - 4 vCPUs - 28GB RAM
+Standard_DS12-2_v2|DS12-2 (v2) - 4 vCPUs - 28GB RAM
+Standard_DS12_v2|DS12 (v2) - 4 vCPUs - 28GB RAM
+Standard_DS12_v2_Promo|DS12 (v2) Promo - 4 vCPUs - 28GB RAM
+Standard_DS13|DS13 - 8 vCPUs - 56GB RAM
+Standard_DS13-2_v2|DS13-2 (v2) - 8 vCPUs - 56GB RAM
+Standard_DS13-4_v2|DS13-4 (v2) - 8 vCPUs - 56GB RAM
+Standard_DS13_v2|DS13 (v2) - 8 vCPUs - 56GB RAM
+Standard_DS13_v2_Promo|DS13 (v2) Promo - 8 vCPUs - 56GB RAM
+Standard_DS14|DS14 - 16 vCPUs - 112GB RAM
+Standard_DS14-4_v2|DS14-4 (v2) - 16 vCPUs - 112GB RAM
+Standard_DS14-8_v2|DS14-8 (v2) - 16 vCPUs - 112GB RAM
+Standard_DS14_v2|DS14 (v2) - 16 vCPUs - 112GB RAM
+Standard_DS14_v2_Promo|DS14 (v2) Promo - 16 vCPUs - 112GB RAM
+Standard_DS15_v2|DS15 (v2) - 20 vCPUs - 140GB RAM
+Standard_E2_v3|E2 (v3) - 2 vCPUs - 16GB RAM
+Standard_E2a_v4|E2a (v4) - 2 vCPUs - 16GB RAM
+Standard_E2as_v4|E2as (v4) - 2 vCPUs - 16GB RAM
+Standard_E2s_v3|E2s (v3) - 2 vCPUs - 16GB RAM
+Standard_E4-2s_v3|E4-2s (v3) - 4 vCPUs - 32GB RAM
+Standard_E4_v3|E4 (v3) - 4 vCPUs - 32GB RAM
+Standard_E4a_v4|E4a (v4) - 4 vCPUs - 32GB RAM
+Standard_E4as_v4|E4as (v4) - 4 vCPUs - 32GB RAM
+Standard_E4s_v3|E4s (v3) - 4 vCPUs - 32GB RAM
+Standard_E8-2s_v3|E8-2s (v3) - 8 vCPUs - 64GB RAM
+Standard_E8-4s_v3|E8-4s (v3) - 8 vCPUs - 64GB RAM
+Standard_E8_v3|E8 (v3) - 8 vCPUs - 64GB RAM
+Standard_E8a_v4|E8a (v4) - 8 vCPUs - 64GB RAM
+Standard_E8as_v4|E8as (v4) - 8 vCPUs - 64GB RAM
+Standard_E8s_v3|E8s (v3) - 8 vCPUs - 64GB RAM
+Standard_E16-4s_v3|E16-4s (v3) - 16 vCPUs - 128GB RAM
+Standard_E16-8s_v3|E16-8s (v3) - 16 vCPUs - 128GB RAM
+Standard_E16_v3|E16 (v3) - 16 vCPUs - 128GB RAM
+Standard_E16a_v4|E16a (v4) - 16 vCPUs - 128GB RAM
+Standard_E16as_v4|E16as (v4) - 16 vCPUs - 128GB RAM
+Standard_E16s_v3|E16s (v3) - 16 vCPUs - 128GB RAM
+Standard_E20_v3|E20 (v3) - 20 vCPUs - 160GB RAM
+Standard_E20a_v4|E20a (v4) - 20 vCPUs - 160GB RAM
+Standard_E20as_v4|E20as (v4) - 20 vCPUs - 160GB RAM
+Standard_E20s_v3|E20s (v3) - 20 vCPUs - 160GB RAM
+Standard_E32-8s_v3|E32-8s (v3) - 32 vCPUs - 256GB RAM
+Standard_E32-16s_v3|E32-16s (v3) - 32 vCPUs - 256GB RAM
+Standard_E32_v3|E32 (v3) - 32 vCPUs - 256GB RAM
+Standard_E32a_v4|E32a (v4) - 32 vCPUs - 256GB RAM
+Standard_E32as_v4|E32as (v4) - 32 vCPUs - 256GB RAM
+Standard_E32s_v3|E32s (v3) - 32 vCPUs - 256GB RAM
+Standard_E48_v3|E48 (v3) - 48 vCPUs - 384GB RAM
+Standard_E48a_v4|E48a (v4) - 48 vCPUs - 384GB RAM
+Standard_E48as_v4|E48as (v4) - 48 vCPUs - 384GB RAM
+Standard_E48s_v3|E48s (v3) - 48 vCPUs - 384GB RAM
+Standard_E64-16s_v3|E64-16s (v3) - 64 vCPUs - 432GB RAM
+Standard_E64-32s_v3|E64-32s (v3) - 64 vCPUs - 432GB RAM
+Standard_E64_v3|E64 (v3) - 64 vCPUs - 432GB RAM
+Standard_E64a_v4|E64a (v4) - 64 vCPUs - 432GB RAM
+Standard_E64as_v4|E64as (v4) - 64 vCPUs - 432GB RAM
+Standard_E64i_v3|E64i (v3) - 64 vCPUs - 432GB RAM
+Standard_E64is_v3|E64is (v3) - 64 vCPUs - 432GB RAM
+Standard_E64s_v3|E64s (v3) - 64 vCPUs - 432GB RAM
+Standard_E96a_v4|E96a (v4) - 96 vCPUs - 672GB RAM
+Standard_E96as_v4|E96as (v4) - 96 vCPUs - 672GB RAM
+Standard_F1|F1 - 1 vCPUs - 2GB RAM
+Standard_F1s|F1s - 1 vCPUs - 2GB RAM
+Standard_F2|F2 - 2 vCPUs - 4GB RAM
+Standard_F2s|F2s - 2 vCPUs - 4GB RAM
+Standard_F2s_v2|F2s (v2) - 2 vCPUs - 4GB RAM
+Standard_F4|F4 - 4 vCPUs - 8GB RAM
+Standard_F4s|F4s - 4 vCPUs - 8GB RAM
+Standard_F4s_v2|F4s (v2) - 4 vCPUs - 8GB RAM
+Standard_F8|F8 - 8 vCPUs - 16GB RAM
+Standard_F8s|F8s - 8 vCPUs - 16GB RAM
+Standard_F8s_v2|F8s (v2) - 8 vCPUs - 16GB RAM
+Standard_F16|F16 - 16 vCPUs - 32GB RAM
+Standard_F16s|F16s - 16 vCPUs - 32GB RAM
+Standard_F16s_v2|F16s (v2) - 16 vCPUs - 32GB RAM
+Standard_F32s_v2|F32s (v2) - 32 vCPUs - 64GB RAM
+Standard_F48s_v2|F48s (v2) - 48 vCPUs - 96GB RAM
+Standard_F64s_v2|F64s (v2) - 64 vCPUs - 128GB RAM
+Standard_F72s_v2|F72s (v2) - 72 vCPUs - 144GB RAM
+Standard_G1|G1 - 2 vCPUs - 28GB RAM
+Standard_G2|G2 - 4 vCPUs - 56GB RAM
+Standard_G3|G3 - 8 vCPUs - 112GB RAM
+Standard_G4|G4 - 16 vCPUs - 224GB RAM
+Standard_G5|G5 - 32 vCPUs - 448GB RAM
+Standard_GS1|GS1 - 2 vCPUs - 28GB RAM
+Standard_GS2|GS2 - 4 vCPUs - 56GB RAM
+Standard_GS3|GS3 - 8 vCPUs - 112GB RAM
+Standard_GS4|GS4 - 16 vCPUs - 224GB RAM
+Standard_GS4-4|GS4-4 - 16 vCPUs - 224GB RAM
+Standard_GS4-8|GS4-8 - 16 vCPUs - 224GB RAM
+Standard_GS5|GS5 - 32 vCPUs - 448GB RAM
+Standard_GS5-8|GS5-8 - 32 vCPUs - 448GB RAM
+Standard_GS5-16|GS5-16 - 32 vCPUs - 448GB RAM
+Standard_H8|H8 - 8 vCPUs - 56GB RAM
+Standard_H8_Promo|H8 Promo - 8 vCPUs - 56GB RAM
+Standard_H8m|H8m - 8 vCPUs - 112GB RAM
+Standard_H8m_Promo|H8m Promo - 8 vCPUs - 112GB RAM
+Standard_H16|H16 - 16 vCPUs - 112GB RAM
+Standard_H16_Promo|H16 Promo - 16 vCPUs - 112GB RAM
+Standard_H16m|H16m - 16 vCPUs - 224GB RAM
+Standard_H16m_Promo|H16m Promo - 16 vCPUs - 224GB RAM
+Standard_H16mr|H16mr - 16 vCPUs - 224GB RAM
+Standard_H16mr_Promo|H16mr Promo - 16 vCPUs - 224GB RAM
+Standard_H16r|H16r - 16 vCPUs - 112GB RAM
+Standard_H16r_Promo|H16r Promo - 16 vCPUs - 112GB RAM
+Standard_HB60rs|HB60rs - 60 vCPUs - 224GB RAM
+Standard_HB120rs_v2|HB120rs (v2) - 120 vCPUs - 469GB RAM
+Standard_HC44rs|HC44rs - 44 vCPUs - 328GB RAM
+Standard_L4s|L4s - 4 vCPUs - 32GB RAM
+Standard_L8s|L8s - 8 vCPUs - 64GB RAM
+Standard_L8s_v2|L8s (v2) - 8 vCPUs - 64GB RAM
+Standard_L16s|L16s - 16 vCPUs - 128GB RAM
+Standard_L16s_v2|L16s (v2) - 16 vCPUs - 128GB RAM
+Standard_L32s|L32s - 32 vCPUs - 256GB RAM
+Standard_L32s_v2|L32s (v2) - 32 vCPUs - 256GB RAM
+Standard_L48s_v2|L48s (v2) - 48 vCPUs - 384GB RAM
+Standard_L64s_v2|L64s (v2) - 64 vCPUs - 512GB RAM
+Standard_L80s_v2|L80s (v2) - 80 vCPUs - 640GB RAM
+Standard_M8-2ms|M8-2ms - 8 vCPUs - 219GB RAM
+Standard_M8-4ms|M8-4ms - 8 vCPUs - 219GB RAM
+Standard_M8ms|M8ms - 8 vCPUs - 219GB RAM
+Standard_M16-4ms|M16-4ms - 16 vCPUs - 438GB RAM
+Standard_M16-8ms|M16-8ms - 16 vCPUs - 438GB RAM
+Standard_M16ms|M16ms - 16 vCPUs - 438GB RAM
+Standard_M24ms_v2|M24ms (v2) - 24 vCPUs - 537GB RAM
+Standard_M24s_v2|M24s (v2) - 24 vCPUs - 268GB RAM
+Standard_M32-8ms|M32-8ms - 32 vCPUs - 875GB RAM
+Standard_M32-16ms|M32-16ms - 32 vCPUs - 875GB RAM
+Standard_M32ls|M32ls - 32 vCPUs - 256GB RAM
+Standard_M32ms|M32ms - 32 vCPUs - 875GB RAM
+Standard_M32ts|M32ts - 32 vCPUs - 192GB RAM
+Standard_M48ms_v2|M48ms (v2) - 48 vCPUs - 1074GB RAM
+Standard_M48s_v2|M48s (v2) - 48 vCPUs - 537GB RAM
+Standard_M64|M64 - 64 vCPUs - 1000GB RAM
+Standard_M64-16ms|M64-16ms - 64 vCPUs - 1750GB RAM
+Standard_M64-32ms|M64-32ms - 64 vCPUs - 1750GB RAM
+Standard_M64ls|M64ls - 64 vCPUs - 512GB RAM
+Standard_M64m|M64m - 64 vCPUs - 1750GB RAM
+Standard_M64ms|M64ms - 64 vCPUs - 1750GB RAM
+Standard_M64s|M64s - 64 vCPUs - 1000GB RAM
+Standard_M96ms_v2|M96ms (v2) - 96 vCPUs - 7516GB RAM
+Standard_M96s_v2|M96s (v2) - 96 vCPUs - 1074GB RAM
+Standard_M128|M128 - 128 vCPUs - 2000GB RAM
+Standard_M128-32ms|M128-32ms - 128 vCPUs - 3800GB RAM
+Standard_M128-64ms|M128-64ms - 128 vCPUs - 3800GB RAM
+Standard_M128m|M128m - 128 vCPUs - 3800GB RAM
+Standard_M128ms|M128ms - 128 vCPUs - 3800GB RAM
+Standard_M128s|M128s - 128 vCPUs - 2000GB RAM
+Standard_M192ms_v2|M192ms (v2) - 192 vCPUs - 4295GB RAM
+Standard_M192s_v2|M192s (v2) - 192 vCPUs - 2147GB RAM
+Standard_M208ms_v2|M208ms (v2) - 208 vCPUs - 5700GB RAM
+Standard_M208s_v2|M208s (v2) - 208 vCPUs - 2850GB RAM
+Standard_M416ms_v2|M416ms (v2) - 416 vCPUs - 11400GB RAM
+Standard_M416s_v2|M416s (v2) - 416 vCPUs - 5700GB RAM
+Standard_NC6|NC6 - 6 vCPUs - 56GB RAM
+Standard_NC6_Promo|NC6 Promo - 6 vCPUs - 56GB RAM
+Standard_NC6s_v2|NC6s (v2) - 6 vCPUs - 112GB RAM
+Standard_NC6s_v3|NC6s (v3) - 6 vCPUs - 112GB RAM
+Standard_NC12|NC12 - 12 vCPUs - 112GB RAM
+Standard_NC12_Promo|NC12 Promo - 12 vCPUs - 112GB RAM
+Standard_NC12s_v2|NC12s (v2) - 12 vCPUs - 224GB RAM
+Standard_NC12s_v3|NC12s (v3) - 12 vCPUs - 224GB RAM
+Standard_NC24|NC24 - 24 vCPUs - 224GB RAM
+Standard_NC24_Promo|NC24 Promo - 24 vCPUs - 224GB RAM
+Standard_NC24r|NC24r - 24 vCPUs - 224GB RAM
+Standard_NC24r_Promo|NC24r Promo - 24 vCPUs - 224GB RAM
+Standard_NC24rs_v2|NC24rs (v2) - 24 vCPUs - 448GB RAM
+Standard_NC24rs_v3|NC24rs (v3) - 24 vCPUs - 448GB RAM
+Standard_NC24s_v2|NC24s (v2) - 24 vCPUs - 448GB RAM
+Standard_NC24s_v3|NC24s (v3) - 24 vCPUs - 448GB RAM
+Standard_ND6s|ND6s - 6 vCPUs - 112GB RAM
+Standard_ND12s|ND12s - 12 vCPUs - 224GB RAM
+Standard_ND24rs|ND24rs - 24 vCPUs - 448GB RAM
+Standard_ND24s|ND24s - 24 vCPUs - 448GB RAM
+Standard_ND40rs_v2|ND40rs (v2) - 40 vCPUs - 672GB RAM
+Standard_ND40s_v3|ND40s (v3) - 40 vCPUs - 672GB RAM
+Standard_NP10s|NP10s - 10 vCPUs - 168GB RAM
+Standard_NP20s|NP20s - 20 vCPUs - 336GB RAM
+Standard_NP40s|NP40s - 40 vCPUs - 672GB RAM
+Standard_NV4as_v4|NV4as (v4) - 4 vCPUs - 14GB RAM
+Standard_NV6|NV6 - 6 vCPUs - 56GB RAM
+Standard_NV6_Promo|NV6 Promo - 6 vCPUs - 56GB RAM
+Standard_NV6s_v2|NV6s (v2) - 6 vCPUs - 112GB RAM
+Standard_NV8as_v4|NV8as (v4) - 8 vCPUs - 28GB RAM
+Standard_NV12|NV12 - 12 vCPUs - 112GB RAM
+Standard_NV12_Promo|NV12 Promo - 12 vCPUs - 112GB RAM
+Standard_NV12s_v2|NV12s (v2) - 12 vCPUs - 224GB RAM
+Standard_NV12s_v3|NV12s (v3) - 12 vCPUs - 112GB RAM
+Standard_NV16as_v4|NV16as (v4) - 16 vCPUs - 56GB RAM
+Standard_NV24|NV24 - 24 vCPUs - 224GB RAM
+Standard_NV24_Promo|NV24 Promo - 24 vCPUs - 224GB RAM
+Standard_NV24s_v2|NV24s (v2) - 24 vCPUs - 448GB RAM
+Standard_NV24s_v3|NV24s (v3) - 24 vCPUs - 224GB RAM
+Standard_NV32as_v4|NV32as (v4) - 32 vCPUs - 112GB RAM
+Standard_NV48s_v3|NV48s (v3) - 48 vCPUs - 448GB RAM
+Standard_PB6s|PB6s - 6 vCPUs - 112GB RAM
 
 ## CloudA Cloud
 **Key**|**Description**
@@ -589,27 +825,48 @@ us-west-1|US West (Northern California)
 us-west-2|US West (Oregon)
 
 ## Azure
-| Key | Description |
-| ---------- | ---------- |
-| Central US | Central US |
-| East US | East US |
-| East US 2 | East US 2 |
-| North Central US | North Central US |
-| South Central US | South Central US |
-| West Central US | West Central US |
-| West US | West US |
-| West US 2 | West US 2 |
-| Canada Central | Canada Central |
-| Canada East | Canada East |
-| North Europe | North Europe |
-| West Europe | West Europe |
-| East Asia | East Asia |
-| Southeast Asia | Southeast Asia |
-| Japan East | Japan East |
-| Japan West | Japan West |
-| Brazil South | Brazil South |
-| Australia East | Australia East |
-| Australia Southeast | Australia Southeast |
+Key | Description
+---------- | ----------
+australiacentral|Australia Central
+australiacentral2|Australia Central 2
+australiaeast|Australia East
+australiasoutheast|Australia Southeast
+brazilsouth|Brazil South
+canadacentral|Canada Central
+canadaeast|Canada East
+centralindia|Central India
+centralus|Central US
+eastasia|East Asia
+eastus|East US
+eastus2|East US 2
+francecentral|France Central
+francesouth|France South
+germanynorth|Germany North
+germanywestcentral|Germany West Central
+japaneast|Japan East
+japanwest|Japan West
+koreacentral|Korea Central
+koreasouth|Korea South
+northcentralus|North Central US
+northeurope|North Europe
+norwayeast|Norway East
+norwaywest|Norway West
+southafricanorth|South Africa North
+southafricawest|South Africa West
+southcentralus|South Central US
+southindia|South India
+southeastasia|Southeast Asia
+switzerlandnorth|Switzerland North
+switzerlandwest|Switzerland West
+uaecentral|UAE Central
+uaenorth|UAE North
+uksouth|UK South
+ukwest|UK West
+westcentralus|West Central US
+westeurope|West Europe
+westindia|West India
+westus|West US
+westus2|West US 2
 
 ## CloudA Cloud
 | Key | Description |
