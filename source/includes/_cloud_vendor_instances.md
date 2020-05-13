@@ -825,27 +825,48 @@ us-west-1|US West (Northern California)
 us-west-2|US West (Oregon)
 
 ## Azure
-| Key | Description |
-| ---------- | ---------- |
-| Central US | Central US |
-| East US | East US |
-| East US 2 | East US 2 |
-| North Central US | North Central US |
-| South Central US | South Central US |
-| West Central US | West Central US |
-| West US | West US |
-| West US 2 | West US 2 |
-| Canada Central | Canada Central |
-| Canada East | Canada East |
-| North Europe | North Europe |
-| West Europe | West Europe |
-| East Asia | East Asia |
-| Southeast Asia | Southeast Asia |
-| Japan East | Japan East |
-| Japan West | Japan West |
-| Brazil South | Brazil South |
-| Australia East | Australia East |
-| Australia Southeast | Australia Southeast |
+Key | Description
+---------- | ----------
+australiacentral|Australia Central
+australiacentral2|Australia Central 2
+australiaeast|Australia East
+australiasoutheast|Australia Southeast
+brazilsouth|Brazil South
+canadacentral|Canada Central
+canadaeast|Canada East
+centralindia|Central India
+centralus|Central US
+eastasia|East Asia
+eastus|East US
+eastus2|East US 2
+francecentral|France Central
+francesouth|France South
+germanynorth|Germany North
+germanywestcentral|Germany West Central
+japaneast|Japan East
+japanwest|Japan West
+koreacentral|Korea Central
+koreasouth|Korea South
+northcentralus|North Central US
+northeurope|North Europe
+norwayeast|Norway East
+norwaywest|Norway West
+southafricanorth|South Africa North
+southafricawest|South Africa West
+southcentralus|South Central US
+southindia|South India
+southeastasia|Southeast Asia
+switzerlandnorth|Switzerland North
+switzerlandwest|Switzerland West
+uaecentral|UAE Central
+uaenorth|UAE North
+uksouth|UK South
+ukwest|UK West
+westcentralus|West Central US
+westeurope|West Europe
+westindia|West India
+westus|West US
+westus2|West US 2
 
 ## CloudA Cloud
 | Key | Description |
