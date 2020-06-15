@@ -886,6 +886,7 @@ nyc2|New York 2, US
 nyc3|New York 3, US
 sfo1|San Francisco, US
 sfo2|San Francisco 2, US
+sfo3|San Francisco 3, US
 sgp1|Singapore
 tor1|Toronto, CA
 
