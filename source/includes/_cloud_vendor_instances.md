@@ -579,82 +579,113 @@ gd-40vcpu-160gb | Optimized Droplet - 40 vCPUs - 163,840MB RAM - 1,000GB SSD - 9
 ## Google Compute Engine
 **Key**|**Description**
 -----|-----
-c2-standard-16 | c2-standard-16 - 16 vCPUs - 64GB RAM
-c2-standard-30 | c2-standard-30 - 30 vCPUs - 122,880MB RAM
-c2-standard-4 | c2-standard-4 - 4 vCPUs - 16GB RAM
-c2-standard-60 | c2-standard-60 - 60 vCPUs - 245,760MB RAM
-c2-standard-8 | c2-standard-8 - 8 vCPUs - 32GB RAM
-e2-highcpu-16 | e2-highcpu-16 - 16 vCPUs - 16GB RAM
-e2-highcpu-2 | e2-highcpu-2 - 2 vCPUs - 2GB RAM
-e2-highcpu-4 | e2-highcpu-4 - 4 vCPUs - 4GB RAM
-e2-highcpu-8 | e2-highcpu-8 - 8 vCPUs - 8GB RAM
-e2-highmem-16 | e2-highmem-16 - 16 vCPUs - 128GB RAM
-e2-highmem-2 | e2-highmem-2 - 2 vCPUs - 16GB RAM
-e2-highmem-4 | e2-highmem-4 - 4 vCPUs - 32GB RAM
-e2-highmem-8 | e2-highmem-8 - 8 vCPUs - 64GB RAM
-e2-medium | e2-medium - 2 vCPUs - 4GB RAM
-e2-micro | e2-micro - 2 vCPUs - 1GB RAM
-e2-small | e2-small - 2 vCPUs - 2GB RAM
-e2-standard-16 | e2-standard-16 - 16 vCPUs - 64GB RAM
-e2-standard-2 | e2-standard-2 - 2 vCPUs - 8GB RAM
-e2-standard-4 | e2-standard-4 - 4 vCPUs - 16GB RAM
-e2-standard-8 | e2-standard-8 - 8 vCPUs - 32GB RAM
-f1-micro | f1-micro - 1 vCPU - 614MB RAM
-g1-small | g1-small - 1 vCPU - 1,740MB RAM
-m1-megamem-96 | m1-megamem-96 - 96 vCPUs - 1,468,006MB RAM
-m1-ultramem-160 | m1-ultramem-160 - 160 vCPUs - 3,936,256MB RAM
-m1-ultramem-40 | m1-ultramem-40 - 40 vCPUs - 984,064MB RAM
-m1-ultramem-80 | m1-ultramem-80 - 80 vCPUs - 1,968,128MB RAM
-n1-highcpu-16 | n1-highcpu-16 - 16 vCPUs - 14,746MB RAM
-n1-highcpu-2 | n1-highcpu-2 - 2 vCPUs - 1,843MB RAM
-n1-highcpu-32 | n1-highcpu-32 - 32 vCPUs - 29,491MB RAM
-n1-highcpu-4 | n1-highcpu-4 - 4 vCPUs - 3,686MB RAM
-n1-highcpu-64 | n1-highcpu-64 - 64 vCPUs - 58,982MB RAM
-n1-highcpu-8 | n1-highcpu-8 - 8 vCPUs - 7,373MB RAM
-n1-highcpu-96 | n1-highcpu-96 - 96 vCPUs - 88,474MB RAM
-n1-highmem-16 | n1-highmem-16 - 16 vCPUs - 106,496MB RAM
-n1-highmem-2 | n1-highmem-2 - 2 vCPUs - 13,312MB RAM
-n1-highmem-32 | n1-highmem-32 - 32 vCPUs - 212,992MB RAM
-n1-highmem-4 | n1-highmem-4 - 4 vCPUs - 26,624MB RAM
-n1-highmem-64 | n1-highmem-64 - 64 vCPUs - 425,984MB RAM
-n1-highmem-8 | n1-highmem-8 - 8 vCPUs - 53,248MB RAM
-n1-highmem-96 | n1-highmem-96 - 96 vCPUs - 638,976MB RAM
-n1-megamem-96 | n1-megamem-96 - 96 vCPUs - 1,468,006MB RAM
-n1-standard-1 | n1-standard-1 - 1 vCPU - 3,840MB RAM
-n1-standard-16 | n1-standard-16 - 16 vCPUs - 61,440MB RAM
-n1-standard-2 | n1-standard-2 - 2 vCPUs - 7,680MB RAM
-n1-standard-32 | n1-standard-32 - 32 vCPUs - 122,880MB RAM
-n1-standard-4 | n1-standard-4 - 4 vCPUs - 15,360MB RAM
-n1-standard-64 | n1-standard-64 - 64 vCPUs - 245,760MB RAM
-n1-standard-8 | n1-standard-8 - 8 vCPUs - 30,720MB RAM
-n1-standard-96 | n1-standard-96 - 96 vCPUs - 368,640MB RAM
-n1-ultramem-160 | n1-ultramem-160 - 160 vCPUs - 3,936,256MB RAM
-n1-ultramem-40 | n1-ultramem-40 - 40 vCPUs - 984,064MB RAM
-n1-ultramem-80 | n1-ultramem-80 - 80 vCPUs - 1,968,128MB RAM
-n2-highcpu-16 | n2-highcpu-16 - 16 vCPUs - 16GB RAM
-n2-highcpu-2 | n2-highcpu-2 - 2 vCPUs - 2GB RAM
-n2-highcpu-32 | n2-highcpu-32 - 32 vCPUs - 32GB RAM
-n2-highcpu-4 | n2-highcpu-4 - 4 vCPUs - 4GB RAM
-n2-highcpu-48 | n2-highcpu-48 - 48 vCPUs - 49,152MB RAM
-n2-highcpu-64 | n2-highcpu-64 - 64 vCPUs - 64GB RAM
-n2-highcpu-8 | n2-highcpu-8 - 8 vCPUs - 8GB RAM
-n2-highcpu-80 | n2-highcpu-80 - 80 vCPUs - 81,920MB RAM
-n2-highmem-16 | n2-highmem-16 - 16 vCPUs - 128GB RAM
-n2-highmem-2 | n2-highmem-2 - 2 vCPUs - 16GB RAM
-n2-highmem-32 | n2-highmem-32 - 32 vCPUs - 262,144MB RAM
-n2-highmem-4 | n2-highmem-4 - 4 vCPUs - 32GB RAM
-n2-highmem-48 | n2-highmem-48 - 48 vCPUs - 393,216MB RAM
-n2-highmem-64 | n2-highmem-64 - 64 vCPUs - 524,288MB RAM
-n2-highmem-8 | n2-highmem-8 - 8 vCPUs - 64GB RAM
-n2-highmem-80 | n2-highmem-80 - 80 vCPUs - 655,360MB RAM
-n2-standard-16 | n2-standard-16 - 16 vCPUs - 64GB RAM
-n2-standard-2 | n2-standard-2 - 2 vCPUs - 8GB RAM
-n2-standard-32 | n2-standard-32 - 32 vCPUs - 128GB RAM
-n2-standard-4 | n2-standard-4 - 4 vCPUs - 16GB RAM
-n2-standard-48 | n2-standard-48 - 48 vCPUs - 196GB RAM
-n2-standard-64 | n2-standard-64 - 64 vCPUs - 262,144MB RAM
-n2-standard-8 | n2-standard-8 - 8 vCPUs - 32GB RAM
-n2-standard-80 | n2-standard-80 - 80 vCPUs - 327,680MB RAM
+c2-standard-4|4 vCPUs, 16GB RAM
+c2-standard-8|8 vCPUs, 32GB RAM
+c2-standard-16|16 vCPUs, 64GB RAM
+c2-standard-30|30 vCPUs, 120GB RAM
+c2-standard-60|60 vCPUs, 240GB RAM
+e2-highcpu-2|2 vCPUs, 2GB RAM
+e2-highcpu-4|4 vCPUs, 4GB RAM
+e2-highcpu-8|8 vCPUs, 8GB RAM
+e2-highcpu-16|16 vCPUs, 16GB RAM
+e2-highmem-2|2 vCPUs, 16GB RAM
+e2-highmem-4|4 vCPUs, 32GB RAM
+e2-highmem-8|8 vCPUs, 64GB RAM
+e2-highmem-16|16 vCPUs, 128GB RAM
+e2-medium|2 vCPUs, 4GB RAM
+e2-micro|2 vCPUs, 1GB RAM
+e2-small|2 vCPUs, 2GB RAM
+e2-standard-2|2 vCPUs, 8GB RAM
+e2-standard-4|4 vCPUs, 16GB RAM
+e2-standard-8|8 vCPUs, 32GB RAM
+e2-standard-16|16 vCPUs, 64GB RAM
+f1-micro|1 vCPU, 600MB RAM
+g1-small|1 vCPU, 1GB RAM
+m1-megamem-96|96 vCPUs, 1,433GB RAM
+m1-ultramem-40|40 vCPUs, 961GB RAM
+m1-ultramem-80|80 vCPUs, 1,922GB RAM
+m1-ultramem-160|160 vCPUs, 3,844GB RAM
+n1-highcpu-2|2 vCPUs, 1GB RAM
+n1-highcpu-4|4 vCPUs, 3GB RAM
+n1-highcpu-8|8 vCPUs, 7GB RAM
+n1-highcpu-16|16 vCPUs, 14GB RAM
+n1-highcpu-32|32 vCPUs, 28GB RAM
+n1-highcpu-64|64 vCPUs, 57GB RAM
+n1-highcpu-96|96 vCPUs, 86GB RAM
+n1-highmem-2|2 vCPUs, 13GB RAM
+n1-highmem-4|4 vCPUs, 26GB RAM
+n1-highmem-8|8 vCPUs, 52GB RAM
+n1-highmem-16|16 vCPUs, 104GB RAM
+n1-highmem-32|32 vCPUs, 208GB RAM
+n1-highmem-64|64 vCPUs, 416GB RAM
+n1-highmem-96|96 vCPUs, 624GB RAM
+n1-megamem-96|96 vCPUs, 1,433GB RAM
+n1-standard-1|1 vCPU, 3GB RAM
+n1-standard-2|2 vCPUs, 7GB RAM
+n1-standard-4|4 vCPUs, 15GB RAM
+n1-standard-8|8 vCPUs, 30GB RAM
+n1-standard-16|16 vCPUs, 60GB RAM
+n1-standard-32|32 vCPUs, 120GB RAM
+n1-standard-64|64 vCPUs, 240GB RAM
+n1-standard-96|96 vCPUs, 360GB RAM
+n1-ultramem-40|40 vCPUs, 961GB RAM
+n1-ultramem-80|80 vCPUs, 1,922GB RAM
+n1-ultramem-160|160 vCPUs, 3,844GB RAM
+n2-highcpu-2|2 vCPUs, 2GB RAM
+n2-highcpu-4|4 vCPUs, 4GB RAM
+n2-highcpu-8|8 vCPUs, 8GB RAM
+n2-highcpu-16|16 vCPUs, 16GB RAM
+n2-highcpu-32|32 vCPUs, 32GB RAM
+n2-highcpu-48|48 vCPUs, 48GB RAM
+n2-highcpu-64|64 vCPUs, 64GB RAM
+n2-highcpu-80|80 vCPUs, 80GB RAM
+n2-highmem-2|2 vCPUs, 16GB RAM
+n2-highmem-4|4 vCPUs, 32GB RAM
+n2-highmem-8|8 vCPUs, 64GB RAM
+n2-highmem-16|16 vCPUs, 128GB RAM
+n2-highmem-32|32 vCPUs, 256GB RAM
+n2-highmem-48|48 vCPUs, 384GB RAM
+n2-highmem-64|64 vCPUs, 512GB RAM
+n2-highmem-80|80 vCPUs, 640GB RAM
+n2-standard-2|2 vCPUs, 8GB RAM
+n2-standard-4|4 vCPUs, 16GB RAM
+n2-standard-8|8 vCPUs, 32GB RAM
+n2-standard-16|16 vCPUs, 64GB RAM
+n2-standard-32|32 vCPUs, 128GB RAM
+n2-standard-48|48 vCPUs, 192GB RAM
+n2-standard-64|64 vCPUs, 256GB RAM
+n2-standard-80|80 vCPUs, 320GB RAM
+n2d-highcpu-2|2 vCPUs, 2GB RAM
+n2d-highcpu-4|4 vCPUs, 4GB RAM
+n2d-highcpu-8|8 vCPUs, 8GB RAM
+n2d-highcpu-16|16 vCPUs, 16GB RAM
+n2d-highcpu-32|32 vCPUs, 32GB RAM
+n2d-highcpu-48|48 vCPUs, 48GB RAM
+n2d-highcpu-64|64 vCPUs, 64GB RAM
+n2d-highcpu-80|80 vCPUs, 80GB RAM
+n2d-highcpu-96|96 vCPUs, 96GB RAM
+n2d-highcpu-128|128 vCPUs, 128GB RAM
+n2d-highcpu-224|224 vCPUs, 224GB RAM
+n2d-highmem-2|2 vCPUs, 16GB RAM
+n2d-highmem-4|4 vCPUs, 32GB RAM
+n2d-highmem-8|8 vCPUs, 64GB RAM
+n2d-highmem-16|16 vCPUs, 128GB RAM
+n2d-highmem-32|32 vCPUs, 256GB RAM
+n2d-highmem-48|48 vCPUs, 384GB RAM
+n2d-highmem-64|64 vCPUs, 512GB RAM
+n2d-highmem-80|80 vCPUs, 640GB RAM
+n2d-highmem-96|96 vCPUs, 768GB RAM
+n2d-standard-2|2 vCPUs, 8GB RAM
+n2d-standard-4|4 vCPUs, 16GB RAM
+n2d-standard-8|8 vCPUs, 32GB RAM
+n2d-standard-16|16 vCPUs, 64GB RAM
+n2d-standard-32|32 vCPUs, 128GB RAM
+n2d-standard-48|48 vCPUs, 192GB RAM
+n2d-standard-64|64 vCPUs, 256GB RAM
+n2d-standard-80|80 vCPUs, 320GB RAM
+n2d-standard-96|96 vCPUs, 384GB RAM
+n2d-standard-128|128 vCPUs, 512GB RAM
+n2d-standard-224|224 vCPUs, 896GB RAM
 
 ## Hetzner
 **Key**|**Description**
@@ -890,7 +921,7 @@ sfo3|San Francisco 3, US
 sgp1|Singapore
 tor1|Toronto, CA
 
-## GCE
+## Google Compute Engine
 Key|Description
 -----|-----
 asia-east1-a|asia-east1-a
@@ -905,12 +936,18 @@ asia-northeast1-c|asia-northeast1-c
 asia-northeast2-a|asia-northeast2-a
 asia-northeast2-b|asia-northeast2-b
 asia-northeast2-c|asia-northeast2-c
+asia-northeast3-a|asia-northeast3-a
+asia-northeast3-b|asia-northeast3-b
+asia-northeast3-c|asia-northeast3-c
 asia-south1-a|asia-south1-a
 asia-south1-b|asia-south1-b
 asia-south1-c|asia-south1-c
 asia-southeast1-a|asia-southeast1-a
 asia-southeast1-b|asia-southeast1-b
 asia-southeast1-c|asia-southeast1-c
+asia-southeast2-a|asia-southeast2-a
+asia-southeast2-b|asia-southeast2-b
+asia-southeast2-c|asia-southeast2-c
 australia-southeast1-a|australia-southeast1-a
 australia-southeast1-b|australia-southeast1-b
 australia-southeast1-c|australia-southeast1-c
@@ -954,6 +991,12 @@ us-west1-c|us-west1-c
 us-west2-a|us-west2-a
 us-west2-b|us-west2-b
 us-west2-c|us-west2-c
+us-west3-a|us-west3-a
+us-west3-b|us-west3-b
+us-west3-c|us-west3-c
+us-west4-a|us-west4-a
+us-west4-b|us-west4-b
+us-west4-c|us-west4-c
 
 ## Hetzner
 Key|Description
