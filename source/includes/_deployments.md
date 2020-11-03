@@ -176,7 +176,9 @@ Content-Type: application/json
   "response":
     {
       "ok":true,
-      "message":"Stack queued for redeployment"
+      "message":"Stack queued for redeployment",
+      "async_action_id":40,
+      "queued": true
     }
 }
 ```
