@@ -25,6 +25,7 @@ includes:
   - server_groups
   - servers
   - server_settings
+  - tagging_components
   - clouds
   - backups
   - accounts
