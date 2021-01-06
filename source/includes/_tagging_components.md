@@ -22,11 +22,11 @@ Content-Type: application/json
 {
   "response":[
     {
-	"entity_type":loadbalancer,                    
-	"entity_id":17823,                      
+	"entity_type":"loadbalancer",                    
+	"entity_id":"17823",                      
 	"tags": ["foo","bar"],
-	"created_at_iso":2021-01-04T21:32:33+0000
-	"updated_at_iso":2021-01-05T11:12:23+0000}
+	"created_at_iso":"2021-01-04T21:32:33+0000"
+	"updated_at_iso":"2021-01-05T11:12:23+0000"}
   ],
   "count":1,
   "pagination":
@@ -80,11 +80,11 @@ Content-Type: application/json
 {
   "response":[
     {
-	"entity_type":loadbalancer,                    
-	"entity_id":17823,                      
+	"entity_type":"loadbalancer",                    
+	"entity_id":"17823",                      
 	"tags": ["foo","bar"],
-	"created_at_iso":2021-01-04T21:32:33+0000
-	"updated_at_iso":2021-01-05T11:12:23+0000}
+	"created_at_iso":"2021-01-04T21:32:33+0000"
+	"updated_at_iso":"2021-01-05T11:12:23+0000"}
   ],
   "count":1,
   "pagination":
@@ -113,8 +113,8 @@ Add tags to an entity (server or loadbalancer). Completely **replaces** tags of 
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-entity_type | required | string | Type of the entity | `server`
-entity_id | required | string | ID of the entity | `57648`
+entity_type | **required** | string | Type of the entity | `server`
+entity_id | **required** | string | ID of the entity | `57648`
 
 ## Update (patch) tags
 
@@ -138,11 +138,11 @@ Content-Type: application/json
 {
   "response":[
     {
-	"entity_type":loadbalancer,                    
-	"entity_id":17823,                      
+	"entity_type":"loadbalancer",                    
+	"entity_id":"17823",                      
 	"tags": ["foo","bar"],
-	"created_at_iso":2021-01-04T21:32:33+0000
-	"updated_at_iso":2021-01-05T11:12:23+0000}
+	"created_at_iso":"2021-01-04T21:32:33+0000"
+	"updated_at_iso":"2021-01-05T11:12:23+0000"}
   ],
   "count":1,
   "pagination":
@@ -171,17 +171,17 @@ Update tags on an entity (server or loadbalancer). **Adds** or **deletes** tags 
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-op | required | string | "add" or "delete" - specifies what to do with the below tag values | `add`
-tags | required | array | Array of tag values for above operation | `["foo","bar"]`
+op | **required** | string | "add" or "delete" - specifies what to do with the below tag values | `add`
+tags | **required** | array | Array of tag values for above operation | `["foo","bar"]`
 
 
 ### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-entity_type | required | string | Type of the entity | `server`
-entity_id | required | string | ID of the entity | `57648`
-operations | required | array | An array of `Operation API objects` | `57648`
+entity_type | **required** | string | Type of the entity | `server`
+entity_id | **required** | string | ID of the entity | `57648`
+operations | **required** | array | An array of `Operation API objects` | `[add,["foo","bar"]]`
 
 ## Delete tags
 
@@ -205,11 +205,11 @@ Content-Type: application/json
 {
   "response":[
     {
-	"entity_type":loadbalancer,                    
-	"entity_id":17823,                      
+	"entity_type":"loadbalancer",                    
+	"entity_id":"17823",                      
 	"tags": ["foo","bar"],
-	"created_at_iso":2021-01-04T21:32:33+0000
-	"updated_at_iso":2021-01-05T11:12:23+0000}
+	"created_at_iso":"2021-01-04T21:32:33+0000"
+	"updated_at_iso":"2021-01-05T11:12:23+0000"}
   ],
   "count":1,
   "pagination":
@@ -239,5 +239,5 @@ Delete all tags on an entity (server or loadbalancer).
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-entity_type | required | string | Type of the entity | `server`
-entity_id | required | string | ID of the entity | `57648`
+entity_type | **required** | string | Type of the entity | `server`
+entity_id | **required** | string | ID of the entity | `57648`
