@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-Add tags to an entity (server or loadbalancer). Completely replaces tags of the object with tags provided.
+Add tags to an entity (server or loadbalancer). Completely **replaces** tags of the object with tags provided.
 
 <aside class="notice">
 <b>Scope:</b> <i>public</i>
@@ -157,7 +157,7 @@ Content-Type: application/json
 }
 ```
 
-Update tags on an entity (server or loadbalancer). Adds or deletes tags based on the `operations` parameter. Deleting non-existent tags is not an error, will simply be ignored. Performs deletions first, then additions.
+Update tags on an entity (server or loadbalancer). **Adds** or **deletes** tags based on the `operations` parameter. Deleting non-existent tags is not an error, will simply be ignored. Performs deletions first, then additions. 
 
 <aside class="notice">
 <b>Scope:</b> <i>public</i>
@@ -165,7 +165,7 @@ Update tags on an entity (server or loadbalancer). Adds or deletes tags based on
 
 ### HTTP Request
 
-`POST /tags/{entity_type}/{entity_id}/{operations}`
+`PATCH /tags/{entity_type}/{entity_id}/{operations}`
 
 ### Operation API objects
 
