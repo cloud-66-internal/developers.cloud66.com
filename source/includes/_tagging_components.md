@@ -115,6 +115,7 @@ Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
 entity_type | **required** | string | Type of the entity | `server`
 entity_id | **required** | string | ID of the entity | `57648`
+tags | **required** | array | Array of tag values to be POSTed | `["foo","bar"]`
 
 ## Update (patch) tags
 
@@ -181,7 +182,7 @@ Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
 entity_type | **required** | string | Type of the entity | `server`
 entity_id | **required** | string | ID of the entity | `57648`
-operations | **required** | array | An array of `Operation API objects` | `[add,["foo","bar"]]`
+operations | **required** | array | An array of `Operation API objects` | `[{"op":"delete","tags":["tag1","tag2"]}]`
 
 ## Delete tags
 
