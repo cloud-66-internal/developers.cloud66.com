@@ -68,7 +68,7 @@ puts JSON.parse(response.body)['response']
 ```
 
 ```http
-POST /tags/{entity_type}/{entity_id} HTTP/1.1
+POST /tags/{entity_type}/{entity_id}/{tags} HTTP/1.1
 X-RateLimit-Limit: 3600
 X-RateLimit-Remaining: 3597
 ```
