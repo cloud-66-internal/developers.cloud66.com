@@ -728,6 +728,13 @@ Linode 90GB | Linode 90GB
 Linode 150GB | Linode 150GB
 Linode 300GB | Linode 300GB
 
+## Maxihost
+**Key**|**Description**
+-----|-----
+c2.medium.x86 | C2.MEDIUM.X86 - E-2288G - 1 CPU(s) 8 COREs - 64GB - 2x500GB SSD
+c2.small.x86 | C2.SMALL.X86 - E-2276G - 1 CPU(s) 6 COREs - 32GB - 1x500GB SSD
+c2.large.x86 | C2.LARGE.X86 - Silver 4210 - 2 CPU(s) 20 COREs - 128GB - 2x1TB SSD
+
 ## OVH
 **Key**|**Description**
 -----|-----
@@ -1017,6 +1024,18 @@ Newark, NJ, USA|Newark, NJ, USA
 Singapore, SG|Singapore, SG
 Tokyo 2, JP|Tokyo 2, JP
 Toronto, ON|Toronto, ON
+
+## Maxihost
+Key|Description
+-----|-----
+ch3 | CH3, Chicago, US
+dal2 | DAL2, Dallas, US
+la2 | LA2, Los Angeles, US
+mi1 | MI1, Miami, US
+ny2 | NY2, New York, US
+san | SAN, Santiago, CL
+mh1 | MH1, São Paulo, BR
+syd | SYD, Ultimo, AU
 
 ## OVH
 Key|Description
