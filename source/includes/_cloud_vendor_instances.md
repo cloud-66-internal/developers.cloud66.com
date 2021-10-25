@@ -515,66 +515,100 @@ Standard_PB6s|PB6s - 6 vCPUs - 112GB RAM
 ## DigitalOcean
 **Key**|**Description**
 -----|-----
-s-1vcpu-1gb | Standard Droplet - 1 vCPUs - 1GB RAM - 25GB SSD - 1TB Transfer
-s-1vcpu-2gb | Standard Droplet - 1 vCPUs - 2GB RAM - 50GB SSD - 2TB Transfer
-s-1vcpu-3gb | Standard Droplet - 1 vCPUs - 3,072MB RAM - 60GB SSD - 3TB Transfer
-m-1vcpu-8gb | Optimized Droplet - 1 vCPUs - 8GB RAM - 40GB SSD - 5TB Transfer
-s-2vcpu-2gb | Standard Droplet - 2 vCPUs - 2GB RAM - 60GB SSD - 3TB Transfer
-s-2vcpu-4gb | Standard Droplet - 2 vCPUs - 4GB RAM - 80GB SSD - 4TB Transfer
-c-2 | Optimized Droplet - 2 vCPUs - 4GB RAM - 25GB SSD - 4TB Transfer
-gd-2vcpu-8gb | Optimized Droplet - 2 vCPUs - 8GB RAM - 50GB SSD - 4TB Transfer
-g-2vcpu-8gb | Optimized Droplet - 2 vCPUs - 8GB RAM - 25GB SSD - 4TB Transfer
-m6-2vcpu-16gb | Optimized Droplet - 2 vCPUs - 16GB RAM - 300GB SSD - 4TB Transfer
-m-16gb | Optimized Droplet - 2 vCPUs - 16GB RAM - 60GB SSD - 5TB Transfer
-m-2vcpu-16gb | Optimized Droplet - 2 vCPUs - 16GB RAM - 50GB SSD - 4TB Transfer
-m3-2vcpu-16gb | Optimized Droplet - 2 vCPUs - 16GB RAM - 150GB SSD - 4TB Transfer
-s-3vcpu-1gb | Standard Droplet - 3 vCPUs - 1GB RAM - 60GB SSD - 3TB Transfer
-s-4vcpu-8gb | Standard Droplet - 4 vCPUs - 8GB RAM - 160GB SSD - 5TB Transfer
-c-4 | Optimized Droplet - 4 vCPUs - 8GB RAM - 50GB SSD - 5TB Transfer
-g-4vcpu-16gb | Optimized Droplet - 4 vCPUs - 16GB RAM - 50GB SSD - 5TB Transfer
-gd-4vcpu-16gb | Optimized Droplet - 4 vCPUs - 16GB RAM - 100GB SSD - 5TB Transfer
-m3-4vcpu-32gb | Optimized Droplet - 4 vCPUs - 32GB RAM - 300GB SSD - 6TB Transfer
-m-32gb | Optimized Droplet - 4 vCPUs - 32GB RAM - 90GB SSD - 5TB Transfer
-m-4vcpu-32gb | Optimized Droplet - 4 vCPUs - 32GB RAM - 100GB SSD - 6TB Transfer
-m6-4vcpu-32gb | Optimized Droplet - 4 vCPUs - 32GB RAM - 600GB SSD - 6TB Transfer
-s-6vcpu-16gb | Standard Droplet - 6 vCPUs - 16GB RAM - 320GB SSD - 6TB Transfer
-c-8 | Optimized Droplet - 8 vCPUs - 16GB RAM - 100GB SSD - 6TB Transfer
-g-8vcpu-32gb | Optimized Droplet - 8 vCPUs - 32GB RAM - 100GB SSD - 6TB Transfer
-s-8vcpu-32gb | Standard Droplet - 8 vCPUs - 32GB RAM - 640GB SSD - 7TB Transfer
-gd-8vcpu-32gb | Optimized Droplet - 8 vCPUs - 32GB RAM - 200GB SSD - 6TB Transfer
-m6-8vcpu-64gb | Optimized Droplet - 8 vCPUs - 64GB RAM - 1,200GB SSD - 7TB Transfer
-m-64gb | Optimized Droplet - 8 vCPUs - 64GB RAM - 200GB SSD - 5TB Transfer
-m-8vcpu-64gb | Optimized Droplet - 8 vCPUs - 64GB RAM - 200GB SSD - 7TB Transfer
-m3-8vcpu-64gb | Optimized Droplet - 8 vCPUs - 64GB RAM - 600GB SSD - 7TB Transfer
-s-12vcpu-48gb | Standard Droplet - 12 vCPUs - 49,152MB RAM - 960GB SSD - 8TB Transfer
-c-16 | Optimized Droplet - 16 vCPUs - 32GB RAM - 200GB SSD - 7TB Transfer
-g-16vcpu-64gb | Optimized Droplet - 16 vCPUs - 64GB RAM - 200GB SSD - 7TB Transfer
-gd-16vcpu-64gb | Optimized Droplet - 16 vCPUs - 64GB RAM - 400GB SSD - 7TB Transfer
-s-16vcpu-64gb | Standard Droplet - 16 vCPUs - 64GB RAM - 1,280GB SSD - 9TB Transfer
-m-16vcpu-128gb | Optimized Droplet - 16 vCPUs - 128GB RAM - 400GB SSD - 8TB Transfer
-m-128gb | Optimized Droplet - 16 vCPUs - 128GB RAM - 340GB SSD - 5TB Transfer
-m6-16vcpu-128gb | Optimized Droplet - 16 vCPUs - 128GB RAM - 2,400GB SSD - 8TB Transfer
-m3-16vcpu-128gb | Optimized Droplet - 16 vCPUs - 128GB RAM - 1,200GB SSD - 8TB Transfer
-s-20vcpu-96gb | Standard Droplet - 20 vCPUs - 98,304MB RAM - 1,920GB SSD - 10TB Transfer
-s-24vcpu-128gb | Standard Droplet - 24 vCPUs - 128GB RAM - 2,560GB SSD - 11TB Transfer
-m3-24vcpu-192gb | Optimized Droplet - 24 vCPUs - 196GB RAM - 1,800GB SSD - 9TB Transfer
-m-24vcpu-192gb | Optimized Droplet - 24 vCPUs - 196GB RAM - 600GB SSD - 9TB Transfer
-m6-24vcpu-192gb | Optimized Droplet - 24 vCPUs - 196GB RAM - 3,600GB SSD - 9TB Transfer
-c-32 | Optimized Droplet - 32 vCPUs - 64GB RAM - 400GB SSD - 9TB Transfer
-g-32vcpu-128gb | Optimized Droplet - 32 vCPUs - 128GB RAM - 400GB SSD - 8TB Transfer
-gd-32vcpu-128gb | Optimized Droplet - 32 vCPUs - 128GB RAM - 800GB SSD - 8TB Transfer
-s-32vcpu-192gb | Standard Droplet - 32 vCPUs - 196GB RAM - 3,840GB SSD - 12TB Transfer
-m-224gb | Optimized Droplet - 32 vCPUs - 229,376MB RAM - 500GB SSD - 5TB Transfer
-gd-40vcpu-160gb | Optimized Droplet - 40 vCPUs - 163,840MB RAM - 1,000GB SSD - 9TB Transfer
-512mb | [LEGACY] 1 vCPUs - 512MB RAM - 20GB SSD - 1TB Transfer
-1gb | [LEGACY] 1 vCPUs - 1GB RAM - 30GB SSD - 2TB Transfer
-2gb | [LEGACY] 2 vCPUs - 2GB RAM - 40GB SSD - 3TB Transfer
-4gb | [LEGACY] 2 vCPUs - 4GB RAM - 60GB SSD - 4TB Transfer
-8gb | [LEGACY] 4 vCPUs - 8GB RAM - 80GB SSD - 5TB Transfer
-16gb | [LEGACY] 8 vCPUs - 16GB RAM - 160GB SSD - 6TB Transfer
-32gb | [LEGACY] 12 vCPUs - 32GB RAM - 320GB SSD - 7TB Transfer
-48gb | [LEGACY] 16 vCPUs - 48GB RAM - 480GB SSD - 8TB Transfer
-64gb | [LEGACY] 20 vCPUs - 64GB RAM - 640GB SSD - 9TB Transfer
+s-1vcpu-1gb-amd | Basic AMD - 1 vCPUs - 1GB RAM - 25GB SSD - 1TB Transfer
+s-1vcpu-2gb-amd | Basic AMD - 1 vCPUs - 2GB RAM - 50GB SSD - 2TB Transfer
+s-2vcpu-2gb-amd | Basic AMD - 2 vCPUs - 2GB RAM - 60GB SSD - 3TB Transfer
+s-2vcpu-4gb-amd | Basic AMD - 2 vCPUs - 4GB RAM - 80GB SSD - 4TB Transfer
+s-4vcpu-8gb-amd | Basic AMD - 4 vCPUs - 8GB RAM - 160GB SSD - 5TB Transfer
+s-8vcpu-16gb-amd | Basic AMD - 8 vCPUs - 16GB RAM - 320GB SSD - 6TB Transfer
+s-1vcpu-1gb-intel | Basic Intel - 1 vCPUs - 1GB RAM - 25GB SSD - 1TB Transfer
+s-1vcpu-2gb-intel | Basic Intel - 1 vCPUs - 2GB RAM - 50GB SSD - 2TB Transfer
+s-2vcpu-2gb-intel | Basic Intel - 2 vCPUs - 2GB RAM - 60GB SSD - 3TB Transfer
+s-2vcpu-4gb-intel | Basic Intel - 2 vCPUs - 4GB RAM - 80GB SSD - 4TB Transfer
+s-4vcpu-8gb-intel | Basic Intel - 4 vCPUs - 8GB RAM - 160GB SSD - 5TB Transfer
+s-8vcpu-16gb-intel | Basic Intel - 8 vCPUs - 16GB RAM - 320GB SSD - 6TB Transfer
+s-1vcpu-1gb | Basic - 1 vCPUs - 1GB RAM - 25GB SSD - 1TB Transfer
+s-1vcpu-2gb | Basic - 1 vCPUs - 2GB RAM - 50GB SSD - 2TB Transfer
+s-2vcpu-4gb | Basic - 2 vCPUs - 4GB RAM - 80GB SSD - 4TB Transfer
+s-4vcpu-8gb | Basic - 4 vCPUs - 8GB RAM - 160GB SSD - 5TB Transfer
+s-8vcpu-16gb | Basic - 8 vCPUs - 16GB RAM - 320GB SSD - 6TB Transfer
+c2-2vcpu-4gb | CPU-Optimized 2x SSD - 2 vCPUs - 4GB RAM - 50GB SSD - 4TB Transfer
+c2-4vcpu-8gb | CPU-Optimized 2x SSD - 4 vCPUs - 8GB RAM - 100GB SSD - 5TB Transfer
+c2-8vcpu-16gb | CPU-Optimized 2x SSD - 8 vCPUs - 16GB RAM - 200GB SSD - 6TB Transfer
+c2-16vcpu-32gb | CPU-Optimized 2x SSD - 16 vCPUs - 32GB RAM - 400GB SSD - 7TB Transfer
+c2-32vcpu-64gb | CPU-Optimized 2x SSD - 32 vCPUs - 64GB RAM - 800GB SSD - 9TB Transfer
+c-2 | CPU-Optimized - 2 vCPUs - 4GB RAM - 25GB SSD - 4TB Transfer
+c-4 | CPU-Optimized - 4 vCPUs - 8GB RAM - 50GB SSD - 5TB Transfer
+c-8 | CPU-Optimized - 8 vCPUs - 16GB RAM - 100GB SSD - 6TB Transfer
+c-32 | CPU-Optimized - 32 vCPUs - 64GB RAM - 400GB SSD - 9TB Transfer
+gd-2vcpu-8gb | General Purpose 2x SSD - 2 vCPUs - 8GB RAM - 50GB SSD - 4TB Transfer
+gd-4vcpu-16gb | General Purpose 2x SSD - 4 vCPUs - 16GB RAM - 100GB SSD - 5TB Transfer
+gd-8vcpu-32gb | General Purpose 2x SSD - 8 vCPUs - 32GB RAM - 200GB SSD - 6TB Transfer
+gd-16vcpu-64gb | General Purpose 2x SSD - 16 vCPUs - 64GB RAM - 400GB SSD - 7TB Transfer
+gd-32vcpu-128gb | General Purpose 2x SSD - 32 vCPUs - 128GB RAM - 800GB SSD - 8TB Transfer
+gd-40vcpu-160gb | General Purpose 2x SSD - 40 vCPUs - 163,840MB RAM - 1,000GB SSD - 9TB Transfer
+g-2vcpu-8gb | General Purpose - 2 vCPUs - 8GB RAM - 25GB SSD - 4TB Transfer
+g-4vcpu-16gb | General Purpose - 4 vCPUs - 16GB RAM - 50GB SSD - 5TB Transfer
+g-8vcpu-32gb | General Purpose - 8 vCPUs - 32GB RAM - 100GB SSD - 6TB Transfer
+g-16vcpu-64gb | General Purpose - 16 vCPUs - 64GB RAM - 200GB SSD - 7TB Transfer
+g-32vcpu-128gb | General Purpose - 32 vCPUs - 128GB RAM - 400GB SSD - 8TB Transfer
+g-40vcpu-160gb | General Purpose - 40 vCPUs - 160GB RAM - 500GB SSD - 9TB Transfer
+s-1vcpu-3gb | Legacy Basic - 1 vCPUs - 3GB RAM - 60GB SSD - 3TB Transfer
+s-2vcpu-2gb | Legacy Basic - 2 vCPUs - 2GB RAM - 60GB SSD - 3TB Transfer
+s-3vcpu-1gb | Legacy Basic - 3 vCPUs - 1GB RAM - 60GB SSD - 3TB Transfer
+s-6vcpu-16gb | Legacy Basic - 6 vCPUs - 16GB RAM - 320GB SSD - 6TB Transfer
+s-8vcpu-32gb | Legacy Basic - 8 vCPUs - 32GB RAM - 640GB SSD - 7TB Transfer
+s-12vcpu-48gb | Legacy Basic - 12 vCPUs - 49,152MB RAM - 960GB SSD - 8TB Transfer
+s-16vcpu-64gb | Legacy Basic - 16 vCPUs - 64GB RAM - 1,280GB SSD - 9TB Transfer
+s-20vcpu-96gb | Legacy Basic - 20 vCPUs - 96GB RAM - 1,920GB SSD - 10TB Transfer
+s-24vcpu-128gb | Legacy Basic - 24 vCPUs - 128GB RAM - 2,560GB SSD - 11TB Transfer
+s-32vcpu-192gb | Legacy Basic - 32 vCPUs - 192GB RAM - 3,840GB SSD - 12TB Transfer
+c-16 | Legacy CPU-Optimized - 16 vCPUs - 32GB RAM - 200GB SSD - 7TB Transfer
+m-1vcpu-8gb | Legacy Memory-Optimized - 1 vCPUs - 8GB RAM - 40GB SSD - 5TB Transfer
+m-16gb | Legacy Memory-Optimized - 2 vCPUs - 16GB RAM - 60GB SSD - 5TB Transfer
+m-32gb | Legacy Memory-Optimized - 4 vCPUs - 32GB RAM - 90GB SSD - 5TB Transfer
+m-64gb | Legacy Memory-Optimized - 8 vCPUs - 64GB RAM - 200GB SSD - 5TB Transfer
+m-128gb | Legacy Memory-Optimized - 16 vCPUs - 128GB RAM - 340GB SSD - 5TB Transfer
+m-224gb | Legacy Memory-Optimized - 32 vCPUs - 229,376MB RAM - 500GB SSD - 5TB Transfer
+m3-2vcpu-16gb | Memory-Optimized 3x SSD - 2 vCPUs - 16GB RAM - 150GB SSD - 4TB Transfer
+m3-4vcpu-32gb | Memory-Optimized 3x SSD - 4 vCPUs - 32GB RAM - 300GB SSD - 6TB Transfer
+m3-8vcpu-64gb | Memory-Optimized 3x SSD - 8 vCPUs - 64GB RAM - 600GB SSD - 7TB Transfer
+m3-16vcpu-128gb | Memory-Optimized 3x SSD - 16 vCPUs - 128GB RAM - 1,200GB SSD - 8TB Transfer
+m3-24vcpu-192gb | Memory-Optimized 3x SSD - 24 vCPUs - 192GB RAM - 1,800GB SSD - 9TB Transfer
+m3-32vcpu-256gb | Memory-Optimized 3x SSD - 32 vCPUs - 256GB RAM - 2,400GB SSD - 10TB Transfer
+m6-2vcpu-16gb | Memory-Optimized 6x SSD - 2 vCPUs - 16GB RAM - 300GB SSD - 4TB Transfer
+m6-4vcpu-32gb | Memory-Optimized 6x SSD - 4 vCPUs - 32GB RAM - 600GB SSD - 6TB Transfer
+m6-8vcpu-64gb | Memory-Optimized 6x SSD - 8 vCPUs - 64GB RAM - 1,200GB SSD - 7TB Transfer
+m6-16vcpu-128gb | Memory-Optimized 6x SSD - 16 vCPUs - 128GB RAM - 2,400GB SSD - 8TB Transfer
+m6-24vcpu-192gb | Memory-Optimized 6x SSD - 24 vCPUs - 192GB RAM - 3,600GB SSD - 9TB Transfer
+m6-32vcpu-256gb | Memory-Optimized 6x SSD - 32 vCPUs - 256GB RAM - 4,800GB SSD - 10TB Transfer
+m-2vcpu-16gb | Memory-Optimized - 2 vCPUs - 16GB RAM - 50GB SSD - 4TB Transfer
+m-4vcpu-32gb | Memory-Optimized - 4 vCPUs - 32GB RAM - 100GB SSD - 6TB Transfer
+m-8vcpu-64gb | Memory-Optimized - 8 vCPUs - 64GB RAM - 200GB SSD - 7TB Transfer
+m-16vcpu-128gb | Memory-Optimized - 16 vCPUs - 128GB RAM - 400GB SSD - 8TB Transfer
+m-24vcpu-192gb | Memory-Optimized - 24 vCPUs - 192GB RAM - 600GB SSD - 9TB Transfer
+m-32vcpu-256gb | Memory-Optimized - 32 vCPUs - 256GB RAM - 800GB SSD - 10TB Transfer
+so1_5-2vcpu-16gb | Storage-Optimized 1.5x SSD - 2 vCPUs - 16GB RAM - 450GB SSD - 4TB Transfer
+so1_5-4vcpu-32gb | Storage-Optimized 1.5x SSD - 4 vCPUs - 32GB RAM - 900GB SSD - 6TB Transfer
+so1_5-8vcpu-64gb | Storage-Optimized 1.5x SSD - 8 vCPUs - 64GB RAM - 1,800GB SSD - 7TB Transfer
+so1_5-16vcpu-128gb | Storage-Optimized 1.5x SSD - 16 vCPUs - 128GB RAM - 3,600GB SSD - 8TB Transfer
+so1_5-24vcpu-192gb | Storage-Optimized 1.5x SSD - 24 vCPUs - 192GB RAM - 5,400GB SSD - 9TB Transfer
+so1_5-32vcpu-256gb | Storage-Optimized 1.5x SSD - 32 vCPUs - 256GB RAM - 7,200GB SSD - 10TB Transfer
+so-2vcpu-16gb | Storage-Optimized - 2 vCPUs - 16GB RAM - 300GB SSD - 4TB Transfer
+so-4vcpu-32gb | Storage-Optimized - 4 vCPUs - 32GB RAM - 600GB SSD - 6TB Transfer
+so-8vcpu-64gb | Storage-Optimized - 8 vCPUs - 64GB RAM - 1,200GB SSD - 7TB Transfer
+so-16vcpu-128gb | Storage-Optimized - 16 vCPUs - 128GB RAM - 2,400GB SSD - 8TB Transfer
+so-24vcpu-192gb | Storage-Optimized - 24 vCPUs - 192GB RAM - 3,600GB SSD - 9TB Transfer
+so-32vcpu-256gb | Storage-Optimized - 32 vCPUs - 256GB RAM - 4,800GB SSD - 10TB Transfer
+512mb | Legacy Basic - 1 vCPUs - 512MB RAM - 20GB SSD - 1TB Transfer
+1gb | Legacy Basic - 1 vCPUs - 1GB RAM - 30GB SSD - 2TB Transfer
+2gb | Legacy Basic - 2 vCPUs - 2GB RAM - 40GB SSD - 3TB Transfer
+4gb | Legacy Basic - 2 vCPUs - 4GB RAM - 60GB SSD - 4TB Transfer
+8gb | Legacy Basic - 4 vCPUs - 8GB RAM - 80GB SSD - 5TB Transfer
+16gb | Legacy Basic - 8 vCPUs - 16GB RAM - 160GB SSD - 6TB Transfer
+32gb | Legacy Basic - 12 vCPUs - 32GB RAM - 320GB SSD - 7TB Transfer
+48gb | Legacy Basic - 16 vCPUs - 49,152MB RAM - 480GB SSD - 8TB Transfer
+64gb | Legacy Basic - 20 vCPUs - 64GB RAM - 640GB SSD - 9TB Transfer
 
 ## Google Compute Engine
 **Key**|**Description**
