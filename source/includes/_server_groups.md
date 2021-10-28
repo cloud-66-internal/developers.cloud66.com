@@ -182,7 +182,7 @@ root_disk_type | optional | string |  Disk type, accepted values are `ssd` and `
 root_disk_size | optional | integer |  Default size of root disk (in GB) for servers.  (AWS EC2 and GCE only) | `40`
 server_names | optional | string |  The name of the servers | `backend1,backend2`   
 
-## Scale up
+## Scale down
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
