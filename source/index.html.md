@@ -19,6 +19,7 @@ includes:
   - image_repositories
   - enviroment_variables
   - firewall_rules
+  - failover_groups
   - notifications
   - stack_settings
   - jobs
