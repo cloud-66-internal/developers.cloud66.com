@@ -181,3 +181,60 @@ server_subnet_id | optional | string | The subnet_id which you want the servers 
 root_disk_type | optional | string |  Disk type, accepted values are `ssd` and `magnetic`.  (AWS EC2 and GCE only) | `ssd`
 root_disk_size | optional | integer |  Default size of root disk (in GB) for servers.  (AWS EC2 and GCE only) | `40`
 server_names | optional | string |  The name of the servers | `backend1,backend2`   
+
+## Scale down
+
+```ruby
+stack_id = '5999b763474b0eafa5fafb64bff0ba80'
+id = 53
+response = token.post("#{api_url}/stacks/#{stack_id}/server_groups/#{id}.json",  {body: {:subtype => 'web', :server_count => '1'}})
+
+puts JSON.parse(response.body)['response']
+```
+
+```http
+POST /stacks/{stack_id}/server_groups/{id} HTTP/1.1
+X-RateLimit-Limit: 3600
+X-RateLimit-Remaining: 3597
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "response":
+     {
+       "id":8,
+       "user":"shab@shab.com",
+       "resource_type":"stack",
+       "action":"scale_down",
+       "resource_id":"28",
+       "started_via":"api",
+       "started_at":"2016-04-04T18:13:14Z",
+       "finished_at":null,
+       "finished_success":null,
+       "finished_message":null
+     }
+}
+```
+
+Scale-down by deleting servers from a server group. `subtype` and *either* `server_ids` *or* `server_count` must be passed as params.
+
+<aside class="notice">
+<b>Scope:</b> <i>redeploy</i>
+</aside>
+
+### HTTP Request
+
+`POST /stacks/{stack_id}/server_groups/{id}`
+
+### Query parameters
+
+Parameter | Presence | Data type | Description |  Sample value
+--------- | ------- | ------- |----------- |  -------
+stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
+id | **required** | integer | The server group id | `12345`
+subtype | **required** | string | The server group type ( valid options are `web`, `process` and `docker` ) | `docker`
+server_ids | **either/or** | array | An array of the UIDs of servers you wish to delete | `["573134354a9e6295b09bf70e8d844125", "6a5f25e92e939ed7f201cd4e5a4b7596"]`
+server_count | **either/or** | integer | The number of servers you want **after** scaling down | `2`

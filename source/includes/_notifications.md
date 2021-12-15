@@ -1,18 +1,16 @@
-# Notifications
+# Alerts
 
-## Notifications list
+## Alerts list
 
 ```ruby
-id = '5999b763474b0eafa5fafb64bff0ba80'
-response = token.get("#{api_url}/stacks/#{id}/notifications.json")
+stack_id = '5999b763474b0eafa5fafb64bff0ba80'
+response = token.get("#{api_url}/stacks/#{stack_id}/alerts.json")
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-GET /stacks/{id}/notifications HTTP/1.1
-X-RateLimit-Limit: 3600
-X-RateLimit-Remaining: 3597
+GET /stacks/{stack_id}/alerts HTTP/1.1
 ```
 
 ```http
@@ -20,52 +18,62 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "response":[
-    {
-      "id":1189,
-      "user_id":18,
-      "alert_type":"stack.provision.ok",
-      "channels":["email"],
-      "stack_id":"5acd43412ea412e32897c40d46f91183",
-      "params":{},
-      "created_at":"2014-05-29T17:29:54Z",
-      "updated_at":"2014-05-29T17:29:54Z"
-    },
-    {
-      "id":1190,
-      "user_id":18,
-      "alert_type":"stack.provision.fail",
-      "channels":["email"],
-      "stack_id":"5acd43412ea412e32897c40d46f91183",
-      "params":{},
-      "created_at":"2014-05-29T17:29:54Z",
-      "updated_at":"2014-05-29T17:29:54Z"
-    },
-    {
-      "id":1191,
-      "user_id":18,
-      "alert_type":"stack.redeploy.ok",
-      "channels":["email"],
-      "stack_id":"5acd43412ea412e32897c40d46f91183",
-      "params":{},
-      "created_at":"2014-05-29T17:29:54Z",
-      "updated_at":"2014-05-29T17:29:54Z"
-    }
-  ],
-  "count":30,
-  "pagination":
-    {
-      "previous":null,
-      "next":2,
-      "current":1,
-      "per_page":30,
-      "count":48,
-      "pages":2
-    }
+    "response": [
+        {
+            "alert_name": "noticent_stack_provisioned_success",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        },
+        {
+            "alert_name": "noticent_stack_provisioned_failed",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        },
+        {
+            "alert_name": "noticent_stack_redeploy_success",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        },
+        {
+            "alert_name": "noticent_stack_redeploy_failed",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        },
+        {
+            "alert_name": "noticent_server_stopped",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        },
+        {
+            "alert_name": "noticent_server_back",
+            "subscriptions": [
+                {
+                    "channel": "email"
+                }
+            ]
+        }
+   ],
+    "count": 33
 }
+
 ```
 
-Get list of all environment variables of stack
+List the alerts configured on an application.
 
 <aside class="notice">
 <b>Scope:</b> <i>public</i>
@@ -73,29 +81,26 @@ Get list of all environment variables of stack
 
 ### HTTP Request
 
-`GET /stacks/{id}/notifications`
+`GET /stacks/{stack_id}/alerts/`
 
 ### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
-alert_type | optional | string | Type of alert | `server.stopped`
+stack_id | **required** | string | Unique identifier of the application | `5999b763474b0eafa5fafb64bff0ba80`
 
-## Notification
+## Alerts info
 
 ```ruby
-stack_id = 'a6b583684833a2cf4845079c9d9350a8'
-id = 1191
-response = token.get("#{api_url}/stacks/#{stack_id}/notifications/#{id}.json")
+stack_id = '5999b763474b0eafa5fafb64bff0ba80'
+alert_name = `noticent_stack_update_failed`
+response = token.get("#{api_url}/stacks/#{stack_id}/alerts/#{alert_name}.json")
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-GET /stacks/{stack_id}/notifications/{id} HTTP/1.1
-X-RateLimit-Limit: 3600
-X-RateLimit-Remaining: 3597
+GET /stacks/5999b763474b0eafa5fafb64bff0ba80/alerts/noticent_stack_provisioned_success HTTP/1.1
 ```
 
 ```http
@@ -103,17 +108,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "response":
-    {
-      "id":1191,
-      "user_id":18,
-      "alert_type":
-      "stack.redeploy.ok",
-      "channels":["email"],
-      "stack_id":"5acd43412ea412e32897c40d46f91183",
-      "params":{},
-      "created_at":"2014-05-29T17:29:54Z",
-      "updated_at":"2014-05-29T17:29:54Z"
+    "response": {
+        "alert_name": "noticent_stack_provisioned_success",
+        "subscriptions": [
+            {
+                "channel": "email"
+            }
+        ]
     }
 }
 ```
@@ -126,33 +127,28 @@ Get information of a single notification
 
 ### HTTP Request
 
-`GET /stacks/{stack_id}/notifications/{id}`
+`GET /stacks/{stack_id}/alerts/{alert_name}/`
 
 ### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
-id | **required** | integer | The notification ID | `1191`
+stack_id | **required** | string | The application's UID | `5999b763474b0eafa5fafb64bff0ba80`
+alert_name | **required** | string | The name of the alert to query | `noticent_stack_update_failed`
 
-## Update Notification
+## Alerts update
 
 ```ruby
-stack_id = 'a6b583684833a2cf4845079c9d9350a8'
-id = 1191
+stack_id = '5999b763474b0eafa5fafb64bff0ba80'
 
-channels = ['email','hipchat']
-params = {:hipchat_room => 'test', :hipchat_token => 'YOUR_TOKEN'}
-
-response = token.put("#{api_url}/stacks/#{stack_id}/notifications/#{id}.json", {body: {:channels => channels, :params => params}})
+response = token.patch("#{api_url}/stacks/#{stack_id}/alerts.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
 
 puts JSON.parse(response.body)['response']
+
 ```
 
 ```http
-PUT /stacks/{stack_id}/notifications/{id} HTTP/1.1
-X-RateLimit-Limit: 3600
-X-RateLimit-Remaining: 3597
+PATCH /stacks/{stack_id}/alerts/ HTTP/1.1
 ```
 
 ```http
@@ -160,22 +156,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "response":
-  {
-    "id":85,
-    "user_id":1,
-    "alert_type":"active.protect.block",
-    "channels":["email","hipchat"],
-    "stack_id":"3ee97c150d95a9dc4fc801783d18087c",
-    "params":{},
-    "created_at":"2015-11-16T18:14:04Z",
-    "updated_at":"2015-12-09T13:06:14Z"
-  }
+    "response": {
+        "successes": {
+            "alerts": [
+                "noticent_stack_health_check_failed"
+            ],
+            "count": 1
+        },
+        "not_applicable": {
+            "alerts": [],
+            "count": 0
+        },
+        "failures": {
+            "alerts": [],
+            "count": 0
+        }
+    }
 }
 
 ```
 
-Update `channels` or `params` of a notification
+Update the alerts for an application. You can use the JSON response from one application to effectively copy those settings to another application. 
 
 <aside class="notice">
 <b>Scope:</b> <i>public</i>
@@ -183,13 +184,63 @@ Update `channels` or `params` of a notification
 
 ### HTTP Request
 
-`PUT /stacks/{stack_id}/notifications/{id}`
+`PATCH /stacks/{stack_id}/alerts/`
 
 ### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
-id | **required** | integer | The notification ID | `1191`
-channels | optional | string | Notification channels (valid channels are: `email`, `ios`, `hipchat`, `webhook`, `slack`) | `[email,ios]`
-params | optional | string | Notification channel parameters (as JSON string with valid keys: `hipchat_token`, `hipchat_room`, `slack_url`, `slack_channel`, `webhook_url`) | `{'hipchat_room' : 'test'}`
+stack_id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa5fafb64bff0ba80`
+alerts | **required** | json | A JSON formatted description of alert settings | {"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}
+
+## Alerts update application group
+
+```ruby
+application_group_name = 'production-apps'
+
+response = token.patch("#{api_url}/application_groups/#{application_group_name}/alerts.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
+
+puts JSON.parse(response.body)['response']
+```
+
+```http
+PATCH /application_groups/alerts/ HTTP/1.1
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "response": {
+        "successes": {
+            "alerts": [
+                "noticent_stack_health_check_failed"
+            ],
+            "count": 1
+        },
+        "not_applicable": {
+            "alerts": [],
+            "count": 0
+        },
+        "failures": {
+            "alerts": [],
+            "count": 0
+        }
+    }
+}
+
+```
+
+Update the alerts for an application group. You can use the JSON response from one application to effectively copy those settings to an entire application group. 
+
+### HTTP Request
+
+`PATCH /application_groups/alerts`
+
+### Query parameters
+
+Parameter | Presence | Data type | Description |  Sample value
+--------- | ------- | ------- |----------- |  -------
+application_group_name | **required** | string | Name of the application group | `production-apps`
+alerts | **required** | json | A JSON formatted description of alert settings | {"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}
