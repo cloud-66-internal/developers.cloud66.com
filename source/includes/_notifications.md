@@ -1,6 +1,6 @@
-# Alerts
+# Notifications
 
-## Alerts list
+## Notifications list
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
@@ -89,7 +89,7 @@ Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
 stack_id | **required** | string | Unique identifier of the application | `5999b763474b0eafa5fafb64bff0ba80`
 
-## Alerts info
+## Notifications info
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
@@ -136,7 +136,7 @@ Parameter | Presence | Data type | Description |  Sample value
 stack_id | **required** | string | The application's UID | `5999b763474b0eafa5fafb64bff0ba80`
 alert_name | **required** | string | The name of the alert to query | `noticent_stack_update_failed`
 
-## Alerts update
+## Notifications update
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
@@ -193,7 +193,7 @@ Parameter | Presence | Data type | Description |  Sample value
 stack_id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa5fafb64bff0ba80`
 alerts | **required** | json | A JSON formatted description of alert settings | {"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}
 
-## Alerts update application group
+## Notifications update application group
 
 ```ruby
 application_group_name = 'production-apps'
