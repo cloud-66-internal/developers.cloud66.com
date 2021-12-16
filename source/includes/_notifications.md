@@ -238,7 +238,7 @@ Update the alerts for an application group. You can use the JSON response from o
 
 `PATCH /application_groups/alerts`
 
-### Query parameters 
+### Query parameters
 
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
