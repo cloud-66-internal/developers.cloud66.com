@@ -4,13 +4,13 @@
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
-response = token.get("#{api_url}/stacks/#{stack_id}/alerts.json")
+response = token.get("#{api_url}/stacks/#{stack_id}/notifications.json")
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-GET /stacks/{stack_id}/alerts HTTP/1.1
+GET /stacks/{stack_id}/notifications HTTP/1.1
 ```
 
 ```http
@@ -81,7 +81,7 @@ List the alerts configured on an application.
 
 ### HTTP Request
 
-`GET /stacks/{stack_id}/alerts/`
+`GET /stacks/{stack_id}/notifications/`
 
 ### Query parameters
 
@@ -94,13 +94,13 @@ stack_id | **required** | string | Unique identifier of the application | `5999b
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
 alert_name = `noticent_stack_update_failed`
-response = token.get("#{api_url}/stacks/#{stack_id}/alerts/#{alert_name}.json")
+response = token.get("#{api_url}/stacks/#{stack_id}/notifications/#{alert_name}.json")
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-GET /stacks/5999b763474b0eafa5fafb64bff0ba80/alerts/noticent_stack_provisioned_success HTTP/1.1
+GET /stacks/5999b763474b0eafa5fafb64bff0ba80/notifications/noticent_stack_provisioned_success HTTP/1.1
 ```
 
 ```http
@@ -127,7 +127,7 @@ Get information of a single notification
 
 ### HTTP Request
 
-`GET /stacks/{stack_id}/alerts/{alert_name}/`
+`GET /stacks/{stack_id}/notifications/{alert_name}/`
 
 ### Query parameters
 
@@ -141,14 +141,14 @@ alert_name | **required** | string | The name of the alert to query | `noticent_
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
 
-response = token.patch("#{api_url}/stacks/#{stack_id}/alerts.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
+response = token.patch("#{api_url}/stacks/#{stack_id}/notifications.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
 
 puts JSON.parse(response.body)['response']
 
 ```
 
 ```http
-PATCH /stacks/{stack_id}/alerts/ HTTP/1.1
+PATCH /stacks/{stack_id}/notifications/ HTTP/1.1
 ```
 
 ```http
@@ -184,7 +184,7 @@ Update the alerts for an application. You can use the JSON response from one app
 
 ### HTTP Request
 
-`PATCH /stacks/{stack_id}/alerts/`
+`PATCH /stacks/{stack_id}/notifications/`
 
 ### Query parameters
 
@@ -198,13 +198,13 @@ alerts | **required** | json | A JSON formatted description of alert settings | 
 ```ruby
 application_group_name = 'production-apps'
 
-response = token.patch("#{api_url}/application_groups/#{application_group_name}/alerts.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
+response = token.patch("#{api_url}/application_groups/#{application_group_name}/notifications.json", {body:{"alerts":[{"alert_name":"noticent_stack_health_check_failed","subscriptions":[{"channel":"email"}]}]}})
 
 puts JSON.parse(response.body)['response']
 ```
 
 ```http
-PATCH /application_groups/alerts/ HTTP/1.1
+PATCH /application_groups/notifications/ HTTP/1.1
 ```
 
 ```http
@@ -236,7 +236,7 @@ Update the alerts for an application group. You can use the JSON response from o
 
 ### HTTP Request
 
-`PATCH /application_groups/alerts`
+`PATCH /application_groups/notifications`
 
 ### Query parameters
 
