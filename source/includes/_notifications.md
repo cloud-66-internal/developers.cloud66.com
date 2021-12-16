@@ -1,6 +1,6 @@
 # Notifications
 
-## Notifications list
+## Notifications list 
 
 ```ruby
 stack_id = '5999b763474b0eafa5fafb64bff0ba80'
