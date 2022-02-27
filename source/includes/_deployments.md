@@ -200,7 +200,7 @@ Parameter | Presence | Data type | Description |  Sample value
 stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
 git_ref | optional | string | Git reference (branch, tag or hash). Non-docker only. | `a_git_tag_or_hash`
 services | optional | string | Deploy only the service(s) specified. Docker only. | `service1,service2`
-deployment_profile | optional | Deploy using a deployment profile | `my-deploy-profile-name`
+deployment_profile | optional | string | Deploy using a deployment profile | `my-deploy-profile-name`
 
 ## Cancel deployment
 
