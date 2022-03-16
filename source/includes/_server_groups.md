@@ -219,7 +219,7 @@ Content-Type: application/json
 }
 ```
 
-Scale-down by deleting servers from a server group. `subtype` and *either* `server_ids` *or* `server_count` must be passed as params.
+Scale-down by deleting servers from a server group. `subtype` and `server_count` must be passed as params.
 
 <aside class="notice">
 <b>Scope:</b> <i>redeploy</i>
@@ -236,5 +236,4 @@ Parameter | Presence | Data type | Description |  Sample value
 stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0ba80`
 id | **required** | integer | The server group id | `12345`
 subtype | **required** | string | The server group type ( valid options are `web`, `process` and `docker` ) | `docker`
-server_ids | **either/or** | array | An array of the UIDs of servers you wish to delete | `["573134354a9e6295b09bf70e8d844125", "6a5f25e92e939ed7f201cd4e5a4b7596"]`
-server_count | **either/or** | integer | The number of servers you want **after** scaling down | `2`
+server_count | **required** | integer | The number of servers you want **after** scaling down | `2`
