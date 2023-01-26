@@ -595,8 +595,6 @@ POST, PATCH and PUT should use the following object format:
 
 ### Query parameters
 
-Note: all of thes parameters below are properties of `ssl_certificate` - for example `ssl_certificate:type` - they are listed in their short forms below in the interests of space. 
-
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
 type | **required** | string | Type of certificate (`manual` or `lets_encrypt`) | `lets_encrypt`
