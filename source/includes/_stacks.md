@@ -589,9 +589,9 @@ You can use this method to query, add, delete or update SSL certificates on a st
 
 `DELETE /stacks/:stack_id/ssl_certificates/:id`
 
-POST, PATCH and PUT should use the following format:
+POST, PATCH and PUT should use the following object format:
 
-`'{"ssl_certificate":{"server_names":"mywebsite.com","ssl_termination":true,"type":"lets_encrypt","wildcard":true,"dns_provider_uuid":"dp-fbe3dd78cdc600b187b38c4d4b6b016b"}}'`
+`{"ssl_certificate":{"server_names":"mywebsite.com","ssl_termination":true,"type":"lets_encrypt","wildcard":true,"dns_provider_uuid":"dp-fbe3dd78cdc600b187b38c4d4b6b016b"}}`
 
 ### Query parameters
 
