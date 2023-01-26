@@ -541,15 +541,15 @@ Content-Type: application/json
       "name": "my-serv-new",
       "server_group_id": null,
       "server_names": "master.my-serv-new.c66.me",
-      "sha256_fingerprint": "UXXsUuBNZQhNBBsPjaEATCA8t06O2RvgxuMC16q1XLCCHkIitBvMcDqoUpNO16oK",
+      "sha256_fingerprint": "UXXsUuBNZQ...",
       "ca_name": "Let's Encrypt",
       "type": "lets_encrypt",
       "ssl_termination": true,
       "has_intermediate_cert": true,
       "status": 3,
-      "created_at": "2019-10-23T14:15:53Z",
-      "updated_at": "2020-03-04T12:48:25Z",
-      "expires_at": "2020-06-02T11:48:04Z",
+      "created_at": "2022-10-23T14:15:53Z",
+      "updated_at": "2023-03-04T12:48:25Z",
+      "expires_at": "2027-06-02T11:48:04Z",
       "certificate": null,
       "key": null,
       "intermediate_certificate": null
@@ -589,15 +589,61 @@ You can use this method to query, add, delete or update SSL certificates on a st
 
 POST, PATCH and PUT should use the following format:
 
-`'{"ssl_certificate":{"server_names":"mywebsite.com","ssl_termination":true,"type":"lets_encrypt"}}'`
+`'{"ssl_certificate":{"server_names":"mywebsite.com","ssl_termination":true,"type":"lets_encrypt","wildcard":true,"dns_provider_uuid":"dp-fbe3dd78cdc600b187b38c4d4b6b016b"}}'`
 
 ### Query parameters
 
+Note: all of thes parameters below are properties of `ssl_certificate` - for example `ssl_certificate:type` - they are listed in their short forms below in the interests of space. 
+
 Parameter | Presence | Data type | Description |  Sample value
 --------- | ------- | ------- |----------- |  -------
-ssl_certificate:type | **required** | string | Type of certificate (manual or Let's Encrypt) | `lets_encrypt`
-ssl_certificate:ssl_termination | **required** | bool | Whether SSL certificate is terminated on the load balancer or not | `true`
-ssl_certificate:server_names | **required** | string | comma separated list of domains | `hello.com,world.co.uk`
-ssl_certificate:certificate | **required for manual certs** | string | The certificate address | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE----- |
-ssl_certificate:key | **required for manual certs** | string | The certificate key | -----BEGIN RSA PRIVATE KEY----- <br /> `entire key hash` <br /> -----END RSA PRIVATE KEY-----
-ssl_certificate:intermediate_certificate | **optional** | string | The intermediate certificate chain | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE-----
+type | **required** | string | Type of certificate (`manual` or `lets_encrypt`) | `lets_encrypt`
+ssl_termination | **required** | bool | Whether SSL certificate is terminated on the load balancer or not | `true`
+server_names | **required** | string | comma separated list of domains | `hello.com,world.co.uk`
+wildcard | **optional** | bool | Whether the certificate must support wildcarded domain names - only applies to type `lets_encrypt` | `false`
+dns_provider_uuid | **required for wildcard certs** | string | DNS provider to use for the Let's Encrypt DNS challenge | `dp-fbe3dd78cdc...`
+certificate | **required for manual certs** | string | The certificate address | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE----- |
+key | **required for manual certs** | string | The certificate key | -----BEGIN RSA PRIVATE KEY----- <br /> `entire key hash` <br /> -----END RSA PRIVATE KEY-----
+intermediate_certificate | **optional** | string | The intermediate certificate chain | -----BEGIN CERTIFICATE----- <br /> `entire cert hash` <br /> -----END CERTIFICATE-----
+
+
+## DNS providers
+
+```ruby
+response = token.get("#{api_url}/dns_providers.json")
+
+puts JSON.parse(response.body)['response']
+```
+
+```http
+GET /stacks/dns_providers HTTP/1.1
+
+{
+    "response": [
+        {
+            "uuid": "dp-fbe3d478cdc610b187b38c1d2b6b016b",
+            "type": "Cloudflare",
+            "key": "My Cloudflare",
+            "display_name": "Cloudflare (My Cloudflare)",
+            "created_at": "2023-01-25T14:08:28Z",
+            "updated_at": "2023-01-25T14:08:28Z"
+        }
+    ],
+    "count": 1,
+    "pagination": {
+        "previous": null,
+        "next": null,
+        "current": 1,
+        "per_page": 30,
+        "count": 1,
+        "pages": 1
+    }
+}
+
+```
+
+You can use this method to query, add, delete or update SSL certificates on a stack.
+
+<aside class="notice">
+<b>Scope:</b> <i>admin</i>
+</aside>
