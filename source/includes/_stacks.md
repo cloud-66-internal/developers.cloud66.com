@@ -535,35 +535,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "response": [
-    {
-      "uuid": "ssl-5NW0p4CvaYMIjmySGPsCBWLlXIkiIgxw",
-      "name": "my-serv-new",
-      "server_group_id": null,
-      "server_names": "master.my-serv-new.c66.me",
-      "sha256_fingerprint": "UXXsUuBNZQ...",
-      "ca_name": "Let's Encrypt",
-      "type": "lets_encrypt",
-      "ssl_termination": true,
-      "has_intermediate_cert": true,
-      "status": 3,
-      "created_at": "2022-10-23T14:15:53Z",
-      "updated_at": "2023-03-04T12:48:25Z",
-      "expires_at": "2027-06-02T11:48:04Z",
-      "certificate": null,
-      "key": null,
-      "intermediate_certificate": null
-    }
-  ],
-  "count": 1,
-  "pagination": {
-    "previous": null,
-    "next": null,
-    "current": 1,
-    "per_page": 30,
+    "response": [
+        {
+            "uuid": "ssl-9ad095613rrr4e0b8f718302bab8709e",
+            "name": "pp-ticker-prod-cllaz",
+            "server_group_id": null,
+            "server_names": "www.fyp111.co",
+            "sha256_fingerprint": "481f22f00e117e209dbde4c2ae3831401109fc824784943e39a194a3adb64082",
+            "ca_name": "Let's Encrypt",
+            "type": "lets_encrypt",
+            "wildcard": false,
+            "dns_provider_uuid": null,
+            "ssl_termination": true,
+            "has_intermediate_cert": true,
+            "status": 3,
+            "created_at": "2023-01-26T10:23:34Z",
+            "updated_at": "2023-01-26T10:26:29Z",
+            "expires_at": "2023-04-26T09:24:32Z",
+            "certificate": null,
+            "key": null,
+            "intermediate_certificate": null
+        }
+    ],
     "count": 1,
-    "pages": 1
-  }
+    "pagination": {
+        "previous": null,
+        "next": null,
+        "current": 1,
+        "per_page": 30,
+        "count": 1,
+        "pages": 1
+    }
 }
 ```
 
