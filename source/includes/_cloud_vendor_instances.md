@@ -855,24 +855,78 @@ x2.xlarge.x86 | x2.xlarge.x86
 
 **Key**|**Description**
 -----|-----
-201| Cloud Compute - 1 vCPUs - 1GB RAM - 25 GB SSD - 1GB TB BW
-202| Cloud Compute - 1 vCPUs - 2GB RAM - 55 GB SSD - 22GB TB BW
-203| Cloud Compute - 2 vCPUs - 4GB RAM - 80 GB SSD - 32GB TB BW
-204| Cloud Compute - 4 vCPUs - 8GB RAM - 160 GB SSD - 42GB TB BW
-205| Cloud Compute - 6 vCPUs - 16GB RAM - 320 GB SSD - 52GB TB BW
-206| Cloud Compute - 8 vCPUs - 32GB RAM - 640 GB SSD - 62GB TB BW
-207| Cloud Compute - 16 vCPUs - 65536 MB RAM - 1280 GB SSD - 102GB TB BW
-208| Cloud Compute - 24 vCPUs - 98304 MB RAM - 1600 GB SSD - 152GB TB BW
-115| Dedicate - 2 vCPUs - 8GB RAM - 110 GB SSD - 102GB TB BW
-116| Dedicate - 4 vCPUs - 16GB RAM - 2x110 GB SSD - 202GB TB BW
-117| Dedicate - 6 vCPUs - 24GB RAM - 3x110 GB SSD - 302GB TB BW
-118| Dedicate - 8 vCPUs - 32GB RAM - 4x110 GB SSD - 402GB TB BW
-401| High Frequency - 1 vCPUs - 2GB RAM - 64 GB SSD - 22GB TB BW
-402| High Frequency - 2 vCPUs - 4GB RAM - 128 GB SSD - 32GB TB BW
-403| High Frequency - 3 vCPUs - 8GB RAM - 256 GB SSD - 42GB TB BW
-404| High Frequency - 4 vCPUs - 16GB RAM - 384 GB SSD - 52GB TB BW
-405| High Frequency - 8 vCPUs - 32GB RAM - 512 GB SSD - 62GB TB BW
-406| High Frequency - 12 vCPUs - 49152 MB RAM - 768 GB SSD - 82GB TB BW
+|vc2-1c-1gb|Cloud Compute (Intel) - 1 vCPUs - 1 GB RAM|
+|vc2-1c-2gb|Cloud Compute (Intel) - 1 vCPUs - 2 GB RAM|
+|vc2-2c-4gb|Cloud Compute (Intel) - 2 vCPUs - 4 GB RAM|
+|vc2-2c-4gb-sc1|Cloud Compute (Intel) - 2 vCPUs - 4 GB RAM|
+|vc2-4c-8gb|Cloud Compute (Intel) - 4 vCPUs - 8 GB RAM|
+|vc2-4c-8gb-sc1|Cloud Compute (Intel) - 4 vCPUs - 8 GB RAM|
+|vc2-6c-16gb|Cloud Compute (Intel) - 6 vCPUs - 16 GB RAM|
+|vc2-6c-16gb-sc1|Cloud Compute (Intel) - 6 vCPUs - 16 GB RAM|
+|vc2-8c-32gb|Cloud Compute (Intel) - 8 vCPUs - 32 GB RAM|
+|vc2-8c-32gb-sc1|Cloud Compute (Intel) - 8 vCPUs - 32 GB RAM|
+|vc2-16c-64gb|Cloud Compute (Intel) - 16 vCPUs - 64 GB RAM|
+|vc2-16c-64gb-sc1|Cloud Compute (Intel) - 16 vCPUs - 64 GB RAM|
+|vc2-24c-96gb|Cloud Compute (Intel) - 24 vCPUs - 96 GB RAM|
+|vc2-24c-96gb-sc1|Cloud Compute (Intel) - 24 vCPUs - 96 GB RAM|
+|vhf-1c-1gb|High Frequency - 1 vCPUs - 1 GB RAM|
+|vhf-1c-2gb|High Frequency - 1 vCPUs - 2 GB RAM|
+|vhf-1c-2gb-sc1|High Frequency - 1 vCPUs - 2 GB RAM|
+|vhf-2c-2gb|High Frequency - 2 vCPUs - 2 GB RAM|
+|vhf-2c-2gb-sc1|High Frequency - 2 vCPUs - 2 GB RAM|
+|vhf-2c-4gb|High Frequency - 2 vCPUs - 4 GB RAM|
+|vhf-2c-4gb-sc1|High Frequency - 2 vCPUs - 4 GB RAM|
+|vhf-3c-8gb|High Frequency - 3 vCPUs - 8 GB RAM|
+|vhf-3c-8gb-sc1|High Frequency - 3 vCPUs - 8 GB RAM|
+|vhf-4c-16gb|High Frequency - 4 vCPUs - 16 GB RAM|
+|vhf-4c-16gb-sc1|High Frequency - 4 vCPUs - 16 GB RAM|
+|vhf-6c-24gb|High Frequency - 6 vCPUs - 24 GB RAM|
+|vhf-6c-24gb-sc1|High Frequency - 6 vCPUs - 24 GB RAM|
+|vhf-8c-32gb|High Frequency - 8 vCPUs - 32 GB RAM|
+|vhf-8c-32gb-sc1|High Frequency - 8 vCPUs - 32 GB RAM|
+|vhf-12c-48gb|High Frequency - 12 vCPUs - 48 GB RAM|
+|vhf-12c-48gb-sc1|High Frequency - 12 vCPUs - 48 GB RAM|
+|vhp-1c-1gb-amd|High Performance - 1 vCPUs - 1 GB RAM|
+|vhp-1c-2gb-amd|High Performance - 1 vCPUs - 2 GB RAM|
+|vhp-2c-2gb-amd|High Performance - 2 vCPUs - 2 GB RAM|
+|vhp-2c-4gb-amd|High Performance - 2 vCPUs - 4 GB RAM|
+|vhp-4c-8gb-amd|High Performance - 4 vCPUs - 8 GB RAM|
+|vhp-4c-12gb-amd|High Performance - 4 vCPUs - 12 GB RAM|
+|vhp-8c-16gb-amd|High Performance - 8 vCPUs - 16 GB RAM|
+|vhp-12c-24gb-amd|High Performance - 12 vCPUs - 24 GB RAM|
+|vhp-1c-1gb-intel|High Performance - 1 vCPUs - 1 GB RAM|
+|vhp-1c-2gb-intel|High Performance - 1 vCPUs - 2 GB RAM|
+|vhp-2c-2gb-intel|High Performance - 2 vCPUs - 2 GB RAM|
+|vhp-2c-4gb-intel|High Performance - 2 vCPUs - 4 GB RAM|
+|vhp-4c-8gb-intel|High Performance - 4 vCPUs - 8 GB RAM|
+|vhp-4c-12gb-intel|High Performance - 4 vCPUs - 12 GB RAM|
+|vhp-8c-16gb-intel|High Performance - 8 vCPUs - 16 GB RAM|
+|vhp-12c-24gb-intel|High Performance - 12 vCPUs - 24 GB RAM|
+|voc-c-1c-2gb-25s-amd|Optimized Cloud (AMD) - 1 vCPUs - 2 GB RAM|
+|voc-g-1c-4gb-30s-amd|Optimized Cloud (AMD) - 1 vCPUs - 4 GB RAM|
+|voc-m-1c-8gb-50s-amd|Optimized Cloud (AMD) - 1 vCPUs - 8 GB RAM|
+|voc-c-2c-4gb-50s-amd|Optimized Cloud (AMD) - 2 vCPUs - 4 GB RAM|
+|voc-g-2c-8gb-50s-amd|Optimized Cloud (AMD) - 2 vCPUs - 8 GB RAM|
+|voc-c-2c-4gb-75s-amd|Optimized Cloud (AMD) - 2 vCPUs - 4 GB RAM|
+|voc-c-4c-8gb-75s-amd|Optimized Cloud (AMD) - 4 vCPUs - 8 GB RAM|
+|voc-g-4c-16gb-80s-amd|Optimized Cloud (AMD) - 4 vCPUs - 16 GB RAM|
+|voc-m-2c-16gb-100s-amd|Optimized Cloud (AMD) - 2 vCPUs - 16 GB RAM|
+|voc-s-1c-8gb-150s-amd|Optimized Cloud (AMD) - 1 vCPUs - 8 GB RAM|
+|voc-c-4c-8gb-150s-amd|Optimized Cloud (AMD) - 4 vCPUs - 8 GB RAM|
+|voc-c-8c-16gb-150s-amd|Optimized Cloud (AMD) - 8 vCPUs - 16 GB RAM|
+|voc-g-8c-32gb-160s-amd|Optimized Cloud (AMD) - 8 vCPUs - 32 GB RAM|
+|voc-m-2c-16gb-200s-amd|Optimized Cloud (AMD) - 2 vCPUs - 16 GB RAM|
+|voc-m-4c-32gb-200s-amd|Optimized Cloud (AMD) - 4 vCPUs - 32 GB RAM|
+|voc-c-8c-16gb-300s-amd|Optimized Cloud (AMD) - 8 vCPUs - 16 GB RAM|
+|voc-c-16c-32gb-300s-amd|Optimized Cloud (AMD) - 16 vCPUs - 32 GB RAM|
+|voc-s-2c-16gb-320s-amd|Optimized Cloud (AMD) - 2 vCPUs - 16 GB RAM|
+|voc-g-16c-64gb-320s-amd|Optimized Cloud (AMD) - 16 vCPUs - 64 GB RAM|
+|voc-m-2c-16gb-400s-amd|Optimized Cloud (AMD) - 2 vCPUs - 16 GB RAM|
+|voc-m-4c-32gb-400s-amd|Optimized Cloud (AMD) - 4 vCPUs - 32 GB RAM|
+|voc-m-8c-64gb-400s-amd|Optimized Cloud (AMD) - 8 vCPUs - 64 GB RAM|
+|voc-s-2c-16gb-480s-amd|Optimized Cloud (AMD) - 2 vCPUs - 16 GB RAM|
+|voc-g-24c-96gb-480s-amd|Optimized Cloud (AMD) - 24 vCPUs - 96 GB RAM|
+|voc-c-16c-32gb-500s-amd|Optimized Cloud (AMD) - 16 vCPUs - 32 GB RAM|
 
 # Cloud vendor instance regions
 
@@ -1103,26 +1157,6 @@ sjc1|Sunnyvale, CA
 syd1|Sydney, Australia
 yyz1|Toronto, ON, CA
 
-## Vultr
-Key|Description
------|-----
-6|Atlanta, GA, US
-2|Chicago, IL, US
-3|Dallas, TX, US
-5|Los Angeles, CA, US
-39|Miami, FL, US
-1|New Jersey, NJ, US
-4|Seattle, WA, US
-12|Silicon Valley, CA, US
-40|Singapore, SG
-7|Amsterdam, NL
-25|Tokyo, JP
-8|London, GB
-24|Paris, FR
-9|Frankfurt, DE
-22|Toronto, CA
-19|Sydney, AU
-
 ## Rackspace
 **Key**|**Description**
 -----|-----
@@ -1132,3 +1166,36 @@ Key|Description
  london | London 
  northern\_virginia | Northern Virginia 
  sydney | Sydney 
+
+## Vultr
+**Key**|**Description**
+-----|-----
+| ams | Amsterdam, NL |
+| atl | Atlanta, US |
+| blr | Bangalore, IN |
+| ord | Chicago, US |
+| dfw | Dallas, US |
+| del | Delhi NCR, IN |
+| fra | Frankfurt, DE |
+| hnl | Honolulu, US |
+| jnb | Johannesburg, ZA |
+| lhr | London, GB |
+| lax | Los Angeles, US |
+| mad | Madrid, ES |
+| mel | Melbourne, AU |
+| mex | Mexico City, MX |
+| mia | Miami, US |
+| bom | Mumbai, IN |
+| ewr | New Jersey, US |
+| itm | Osaka, JP |
+| cdg | Paris, FR |
+| scl | Santiago, CL |
+| sea | Seattle, US |
+| icn | Seoul, KR |
+| sjc | Silicon Valley, US |
+| sgp | Singapore, SG |
+| sto | Stockholm, SE |
+| syd | Sydney, AU |
+| nrt | Tokyo, JP |
+| yto | Toronto, CA |
+| waw | Warsaw, PL |
