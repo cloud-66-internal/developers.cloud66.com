@@ -201,6 +201,7 @@ stack_id | **required** | string | The stack UID | `5999b763474b0eafa5fafb64bff0
 git_ref | optional | string | Git reference (branch, tag or hash). Non-docker only. | `a_git_tag_or_hash`
 services | optional | string | Deploy only the service(s) & image(s) specified (Docker only). | `service1:image_tagA,service2:image_tagB`
 deployment_profile | optional | string | Deploy using a deployment profile | `my-deploy-profile-name`
+user_reference | optional | string (up to 255 chars) | Adds a value to the metadata field of the the [Stack Action](#stack-action-list) (to allow you to match actions against your own identifiers) | `useful-reference-123`
 
 ## Cancel deployment
 
