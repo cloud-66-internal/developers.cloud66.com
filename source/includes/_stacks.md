@@ -283,17 +283,20 @@ Content-Type: application/json
   "response":
         [
     {
-      "id":10,
-      "user":"test@cloud66.com",
-      "resource_type":"stack",
-      "action":"clear_caches",
-      "resource_id":"283",
-      "started_via":"api",
-      "started_at":
-      "2014-09-01T19:08:05Z",
-      "finished_at":"2014-09-01T19:08:09Z",
-      "finished_success":true,
-      "finished_message":null
+      "id": 6566418,
+      "user": "person@company.com",
+      "resource_type": "stack",
+      "action": "application_deployment",
+      "resource_id": "84195",
+      "started_via": "api",
+      "started_at": "2023-10-11T11:43:57Z",
+      "finished_at": "2023-10-11T11:47:42Z",
+      "finished_success": true,
+      "finished_message": "Completed successfully",
+      "finished_result": {},
+      "metadata": {
+                "user_reference": "my-useful-id" 
+                }
     }
   ],
   "count":1,
@@ -309,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-Retrieve a paged list of all asynchronous actions performed for the stack specified in the request.
+Retrieve a paged list of all asynchronous actions performed for the stack specified in the request. You can filter actions by your own metadata using `user_reference` (note: metadata needs to be added to the action when it is invoked to be available here).
 
 <aside class="notice">
 <b>Scope:</b> <i>public</i>
@@ -330,6 +333,7 @@ id | **required** | string | Unique identifier of the stack | `5999b763474b0eafa
 | Property | Data type | Description | Sample value |
 | ------------- | --------- | ----------------------------------- | ---------------- |
 | id | int | The numeric identifier of the stack action. Identifiers increment by one for each performed action. | `10` |
+| user_reference | string (up to 255 chars) | Returns actions where the metadata matches the query. | `useful-reference-123` |
 | user | string | The email address of the user who performed the stack action. | `hello@cloud66.com`|
 | resource_type | string | The resource for which the action was performed, which is `stack` in this case. | `stack` |
 | action | string | The action that was performed for the stack. | `restart` |
@@ -360,22 +364,22 @@ X-RateLimit-Remaining: 3597
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "response":
     {
-      "id":10,
-      "user":"test@cloud66.com",
-      "resource_type":"stack",
-      "action":"clear_caches",
-      "resource_id":"283",
-      "started_via":"api",
-      "started_at":
-      "2014-09-01T19:08:05Z",
-      "finished_at":"2014-09-01T19:08:09Z",
-      "finished_success":true,
-      "finished_message":null
+    "id": 6566418,
+    "user": "person@company.com",
+    "resource_type": "stack",
+    "action": "application_deployment",
+    "resource_id": "84195",
+    "started_via": "api",
+    "started_at": "2023-10-11T11:43:57Z",
+    "finished_at": "2023-10-11T11:47:42Z",
+    "finished_success": true,
+    "finished_message": "Completed successfully",
+    "finished_result": {},
+    "metadata": {
+        "user_reference": "my-useful-id" 
+                }
     }
-}
 ```
 
 Retrieve the details of an asynchronous action performed for the the stack specified in the request based on the supplied action ID.
