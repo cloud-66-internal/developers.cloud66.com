@@ -463,9 +463,9 @@ command | **required** | string | The action to perform for the stack. Valid val
 | promote_slave_db | Promote the specified slave database server to a standalone master | &bull; `server`:`server-name`<br/> &bull;`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb` |
 | restart | Restarts all stack components (nginx, db, etc.) | None |
 | resync_slave_db | Re-sync the specified slave database server with its master database server | &bull; `server`:`server-name`<br/> &bull;`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb` |
-| service_pause | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull; `server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
-| service_restart | Restarts all the containers from the given service | &bull; `service_name`:`web` <br/> &bull; `server_id_filter`:`f8468fc145ea49bac474b30a8fea888d` (optional)  |
-| service_resume | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull; `server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
+| service_pause | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull;`server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
+| service_restart | Restarts all the containers from the given service | &bull; `service_name`:`web` <br/> &bull;`server_id_filter`:`f8468fc145ea49bac474b30a8fea888d` (optional)  |
+| service_resume | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull;`server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
 
 ## Reboot the Stack
 
