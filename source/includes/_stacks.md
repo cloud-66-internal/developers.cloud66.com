@@ -454,7 +454,7 @@ command | **required** | string | The action to perform for the stack. Valid val
 
 | Command | Comments | Extra Parameters |
 | ---------- | ---------- | ---------------- |
-| maintenance_mode | Enable to Disable maintenance mode for a stack. | <ul><li>`value`:`1` for enable or `0` for disable</li></ul> |
+| maintenance_mode | Enable to Disable maintenance mode for a stack. | &bull; `value`:`1` for enable or `0` for disable |
 | clear_caches | Clear git caches for the stack | None |
 | restart | Restarts all stack components (nginx, db, etc.) | None |
 | promote_slave_db | Promote the specified slave database server to a standalone master | <ul><li>`server`:`server-name`</li><li>`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb`</li></ul> |
