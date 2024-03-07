@@ -454,14 +454,18 @@ command | **required** | string | The action to perform for the stack. Valid val
 
 | Command | Comments | Extra Parameters |
 | ---------- | ---------- | ---------------- |
+| container_restart | Restarts a particular container on the given stack | &bull; `container`:`5999b763474b0eafa5fafb64bff0ba80` |
+| disable_replication_slave_db | Disable replication to the specified slave database server | &bull; `server`:`server-name`<br/> &bull;`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb` |
 | maintenance_mode | Enable to Disable maintenance mode for a stack. | &bull; `value`:`1` for enable or `0` for disable |
-| clear_caches | Clear git caches for the stack | None |
+| process_pause | Pauses the specified process. | &bull; `process-name` |
+| process_restart | Restarts the specified process. | &bull; `process-name` |
+| process_resume | Resumes the specified process. | &bull; `process-name` |
+| promote_slave_db | Promote the specified slave database server to a standalone master | &bull; `server`:`server-name`<br/> &bull;`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb` |
 | restart | Restarts all stack components (nginx, db, etc.) | None |
-| promote_slave_db | Promote the specified slave database server to a standalone master | <ul><li>`server`:`server-name`</li><li>`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb`</li></ul> |
-| resync_slave_db | Re-sync the specified slave database server with its master database server | <ul><li>`server`:`server-name`</li><li>`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb`</li></ul> |
-| container_restart | Restarts a particular container on the given stack | <ul><li>`container`:`5999b763474b0eafa5fafb64bff0ba80`</li></ul> |
-| service_restart | Restarts all the containers from the given service | <ul><li>`service_name`:`web`</li><li>`server_id_filter`:`f8468fc145ea49bac474b30a8fea888d` (optional) </li></ul> |
-
+| resync_slave_db | Re-sync the specified slave database server with its master database server | &bull; `server`:`server-name`<br/> &bull;`server_group`: valid values `all`, `mysql`, `postgresql`, `redis`, `mongodb` |
+| service_pause | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull; `server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
+| service_restart | Restarts all the containers from the given service | &bull; `service_name`:`web` <br/> &bull; `server_id_filter`:`f8468fc145ea49bac474b30a8fea888d` (optional)  |
+| service_resume | Pauses all the containers from the given service | &bull; `service_name`:`api` <br/> &bull; `server_id_filter`:`474b30a8fea888df8468fc145ea49bac` (optional)  |
 
 ## Reboot the Stack
 
